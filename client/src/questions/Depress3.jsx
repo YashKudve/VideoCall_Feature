@@ -45,11 +45,11 @@ const Depress2 = () => {
 
 
     return (
-        <div className="bg-gray-100 min-h-screen py-8 px-4">
+        <div>
             <h1>Depression Test 3</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Question 1: Do you often feel sad or empty?</label>
+                    <label className="font-extrabold">Question 1: Do you often feel sad or empty?</label>
                     <div>
                         <button
                             type="button"
