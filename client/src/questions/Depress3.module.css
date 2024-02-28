@@ -1,0 +1,6 @@
+.selected {
+    background-color: #333;
+    /* Change to your desired darker color */
+    color: #fff;
+    /* Text color for better contrast */
+}

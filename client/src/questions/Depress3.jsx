@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './DepressionTest.module.css';
 
 const Depress2 = () => {
     const [answers, setAnswers] = useState({});
