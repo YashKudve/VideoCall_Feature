@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
 
 
-const Depress2 = () => {
+const Anxiety = () => {
     const [answers, setAnswers] = useState({});
     const [result, setResult] = useState('');
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,15 +21,15 @@ const Depress2 = () => {
         let score = Object.values(answers).reduce((acc, val) => acc + parseInt(val), 0);
         let depressionLevel = '';
         if (score <= 10) {
-            depressionLevel = 'No depression';
+            depressionLevel = 'No Anxiety';
         }
         else if (score <= 20) {
-            depressionLevel = 'Mild depression';
+            depressionLevel = 'Minimal Anxiety';
         }
         else if (score <= 30) {
-            depressionLevel = 'Moderate depression';
+            depressionLevel = 'Moderate Anxiety';
         } else {
-            depressionLevel = 'Severe depression';
+            depressionLevel = 'Severe Anxiety';
         }
         setResult(depressionLevel);
         setModalIsOpen(true);
@@ -38,7 +38,7 @@ const Depress2 = () => {
 
     const closeModal = () => {
         setModalIsOpen(false);
-        // Navigate to next page
+
         history.push('/next-page'); // Replace '/next-page' with the actual URL of the next page
 
     };
@@ -46,10 +46,10 @@ const Depress2 = () => {
 
     return (
         <div>
-            <h1>Depression Test 3</h1>
+            <h1>Anxiety Test</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label className="font-extrabold">Question 1: Do you often feel sad or empty?</label>
+                    <label className="font-extrabold">Question 1: Do you often feel nervous or on edge?</label>
                     <div>
                         <button
                             type="button"
@@ -59,19 +59,19 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q1'] === '3' ? styles.selected : ''} onClick={() => handleChange('q1', '3')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q1'] === '4' ? styles.selected : ''} onClick={() => handleChange('q1', '4')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q1'] === '4' ? styles.selected : ''} onClick={() => handleChange('q1', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <label>Question 2: Little interest or pleasure in doing things?</label>
+                    <label>Question 2: Not being able to stop or control worrying?</label>
                     <div>
                         <button
                             type="button"
@@ -81,19 +81,19 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q2'] === '2' ? styles.selected : ''} onClick={() => handleChange('q2', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q2'] === '3' ? styles.selected : ''} onClick={() => handleChange('q2', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q2'] === '4' ? styles.selected : ''} onClick={() => handleChange('q2', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <label>Question 3: Trouble falling or staying asleep, or sleeping too much?</label>
+                    <label>Question 3: Worrying too much about different things</label>
                     <div>
                         <button
                             type="button"
@@ -103,18 +103,18 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q3'] === '2' ? styles.selected : ''} onClick={() => handleChange('q3', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q3'] === '3' ? styles.selected : ''} onClick={() => handleChange('q3', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q3'] === '4' ? styles.selected : ''} onClick={() => handleChange('q3', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label>Question 4: Feeling tired or having little energy?</label>
+                    <label>Question 4: Do you have trouble concentrating or focusing on tasks?</label>
                     <div>
                         <button
                             type="button"
@@ -124,18 +124,18 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q4'] === '2' ? styles.selected : ''} onClick={() => handleChange('q4', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q4'] === '3' ? styles.selected : ''} onClick={() => handleChange('q4', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q4'] === '4' ? styles.selected : ''} onClick={() => handleChange('q4', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label>Question 5: Poor appetite or overeating?</label>
+                    <label>Question 5: Being so restless that it is hard to sit still</label>
                     <div>
                         <button
                             type="button"
@@ -145,18 +145,18 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q5'] === '2' ? styles.selected : ''} onClick={() => handleChange('q5', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q5'] === '3' ? styles.selected : ''} onClick={() => handleChange('q5', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q5'] === '4' ? styles.selected : ''} onClick={() => handleChange('q5', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label>Question 6: Feeling bad about yourself or that you are a failure or have let yourself or your family down?</label>
+                    <label>Question 6: Becoming easily annoyed or irritable</label>
                     <div>
                         <button
                             type="button"
@@ -166,18 +166,18 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q6'] === '2' ? styles.selected : ''} onClick={() => handleChange('q6', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q6'] === '3' ? styles.selected : ''} onClick={() => handleChange('q6', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q6'] === '4' ? styles.selected : ''} onClick={() => handleChange('q6', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label>Question 7: Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+                    <label>Question 7: Feeling afraid, as if something awful might happen</label>
                     <div>
                         <button
                             type="button"
@@ -187,19 +187,19 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q7'] === '2' ? styles.selected : ''} onClick={() => handleChange('q7', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q7'] === '3' ? styles.selected : ''} onClick={() => handleChange('q7', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q7'] === '4' ? styles.selected : ''} onClick={() => handleChange('q7', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <label>Question 8: Moving or speaking so slowly that other people could have noticed? Or the opposite—being so fidgety or restless that you have been moving around a lot more than usual?</label>
+                    <label>Question 8: Do you experience sudden episodes of intense fear or discomfort, often accompanied by physical symptoms (panic attacks)?</label>
                     <div>
                         <button
                             type="button"
@@ -209,18 +209,18 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q8'] === '2' ? styles.selected : ''} onClick={() => handleChange('q8', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q8'] === '3' ? styles.selected : ''} onClick={() => handleChange('q8', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q8'] === '4' ? styles.selected : ''} onClick={() => handleChange('q8', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label>Question 9: Thoughts that you would be better off dead or of hurting yourself in some way?</label>
+                    <label>Question 9: Do you find it challenging to relax or unwind, even in non-stressful situations?</label>
                     <div>
                         <button
                             type="button"
@@ -230,13 +230,13 @@ const Depress2 = () => {
                             Not at all
                         </button>
                         <button type="button" className={answers['q9'] === '2' ? styles.selected : ''} onClick={() => handleChange('q9', '2')}>
-                            Sometimes
+                            Several Days
                         </button>
                         <button type="button" className={answers['q9'] === '3' ? styles.selected : ''} onClick={() => handleChange('q9', '3')}>
                             Frequently
                         </button>
                         <button type="button" className={answers['q9'] === '4' ? styles.selected : ''} onClick={() => handleChange('q9', '4')}>
-                            Most of Time
+                            Nearly Everyday
                         </button>
                     </div>
                 </div>
@@ -258,4 +258,4 @@ const Depress2 = () => {
     );
 };
 
-export default Depress2;
+export default Anxiety;
