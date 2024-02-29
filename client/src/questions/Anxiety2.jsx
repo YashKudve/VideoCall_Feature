@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
 
 
-const Depress3 = () => {
+const Anxiety2 = () => {
     const [answers, setAnswers] = useState({});
     const [result, setResult] = useState('');
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,15 +21,15 @@ const Depress3 = () => {
         let score = Object.values(answers).reduce((acc, val) => acc + parseInt(val), 0);
         let depressionLevel = '';
         if (score <= 10) {
-            depressionLevel = 'No depression';
+            depressionLevel = 'No Anxiety';
         }
         else if (score <= 20) {
-            depressionLevel = 'Mild depression';
+            depressionLevel = 'Mild Anxiety';
         }
         else if (score <= 30) {
-            depressionLevel = 'Moderate depression';
+            depressionLevel = 'Moderate Anxiety';
         } else {
-            depressionLevel = 'Severe depression';
+            depressionLevel = 'Severe Anxiety';
         }
         setResult(depressionLevel);
         setModalIsOpen(true);
@@ -46,10 +46,10 @@ const Depress3 = () => {
 
     return (
         <div className="container mx-auto mt-8">
-            <h1 className="text-3xl font-bold mb-4">Depression Test 3</h1>
+            <h1 className="text-3xl font-bold mb-4">Anxiety 2</h1>
             <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md">
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Question 1: Do you often feel sad or empty?</label>
+                    <label className="text-lg font-semibold mb-2">Question 1: Do you often feel nervous or on edge?</label>
                     <div>
                         <button
                             type="button"
@@ -71,7 +71,7 @@ const Depress3 = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Question 2: Little interest or pleasure in doing things?</label>
+                    <label>Question 2: Not being able to stop or control worrying?</label>
                     <div>
                         <button
                             type="button"
@@ -93,7 +93,7 @@ const Depress3 = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Question 3: Trouble falling or staying asleep, or sleeping too much?</label>
+                    <label>Question 3: Worrying too much about different things</label>
                     <div>
                         <button
                             type="button"
@@ -114,7 +114,7 @@ const Depress3 = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Question 4: Feeling tired or having little energy?</label>
+                    <label>Question 4: Do you have trouble concentrating or focusing on tasks?</label>
                     <div>
                         <button
                             type="button"
@@ -135,7 +135,7 @@ const Depress3 = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Question 5: Poor appetite or overeating?</label>
+                    <label>Question 5: Being so restless that it is hard to sit still</label>
                     <div>
                         <button
                             type="button"
@@ -156,7 +156,7 @@ const Depress3 = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Question 6: Feeling bad about yourself or that you are a failure or have let yourself or your family down?</label>
+                    <label>Question 6: Becoming easily annoyed or irritable</label>
                     <div>
                         <button
                             type="button"
@@ -177,7 +177,7 @@ const Depress3 = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Question 7: Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+                    <label>Question 7: Feeling afraid, as if something awful might happen</label>
                     <div>
                         <button
                             type="button"
@@ -199,7 +199,7 @@ const Depress3 = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Question 8: Moving or speaking so slowly that other people could have noticed? Or the opposite—being so fidgety or restless that you have been moving around a lot more than usual?</label>
+                    <label>Question 8: Do you experience sudden episodes of intense fear or discomfort, often accompanied by physical symptoms (panic attacks)?</label>
                     <div>
                         <button
                             type="button"
@@ -220,7 +220,7 @@ const Depress3 = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Question 9: Thoughts that you would be better off dead or of hurting yourself in some way?</label>
+                    <label>Question 9: Do you find it challenging to relax or unwind, even in non-stressful situations?</label>
                     <div>
                         <button
                             type="button"
@@ -261,4 +261,4 @@ const Depress3 = () => {
     );
 };
 
-export default Depress3;
+export default Anxiety2;
