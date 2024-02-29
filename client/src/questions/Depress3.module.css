@@ -1,6 +1,24 @@
-.selected {
+/* .selected {
     background-color: #333;
-    /* Change to your desired darker color */
     color: #fff;
-    /* Text color for better contrast */
+}
+
+.option-button {
+    background-color: red;
+    color: wheat;
+} */
+
+.option-button {
+    background-color: #e2e8f0;
+    color: #005eff;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.option-button.selected {
+    background-color: green;
+    color: #ffffff;
 }

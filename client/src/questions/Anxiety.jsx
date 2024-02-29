@@ -46,10 +46,10 @@ const Anxiety = () => {
 
     return (
         <div>
-            <h1>Anxiety Test</h1>
+            <h1 className="text-3xl font-extrabold text-red-700">Anxiety Test</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label className="font-extrabold">Question 1: Do you often feel nervous or on edge?</label>
+                    <label className="">Question 1: Do you often feel nervous or on edge?</label>
                     <div>
                         <button
                             type="button"
@@ -241,7 +241,7 @@ const Anxiety = () => {
                     </div>
                 </div>
                 {/* Add more questions like this */}
-                <button type="submit">Submit</button>
+                <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Submit</button>
             </form>
             {/* {result && <div>Result: {result}</div>} */}
 
