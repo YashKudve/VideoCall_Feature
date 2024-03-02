@@ -15,7 +15,7 @@ function App() {
       {/* <Depress3 /> */}
       {/* <Anxiety2 /> */}
       {/* <PTSD /> */}
-      <PTSDTest />
+      {/* <PTSDTest /> */}
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
