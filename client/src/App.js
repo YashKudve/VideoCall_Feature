@@ -6,6 +6,7 @@ import DepressionTest from "./questions/Depress.jsx";
 import Depress3 from "./questions/Depress3.jsx";
 import Anxiety2 from "./questions/Anxiety2.jsx";
 import PTSD from "./questions/PTSD.jsx";
+import PTSDTest from "./questions/PTSD2.jsx";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <DepressionTest /> */}
       {/* <Depress3 /> */}
       {/* <Anxiety2 /> */}
-      <PTSD />
+      {/* <PTSD /> */}
+      <PTSDTest />
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
