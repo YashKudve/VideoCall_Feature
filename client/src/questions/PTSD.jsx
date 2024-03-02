@@ -66,15 +66,17 @@ export default function PTSD() {
                 <span>- seeing someone be killed or seriously injured </span><br />
                 <span> - having a loved one die through homicide or suicide.</span> <br />
             </div>
-            <span>Have you ever experienced this kind of event?</span>
-            <p>Answer the following questions with Yes or No:</p>
-            <ol className="bg-gray-100 p-6 rounded-lg shadow-md">
+            <span className="font-bold">Have you ever experienced this kind of event?</span>
+            <p>Answer the following questions with <span className="font-bold">Yes</span> or <span className="font-bold">No:</span></p>
+            <ol className="bg-gray-100 p-6 rounded-lg shadow-md text-justify">
                 {questions.map((question, index) => (
                     <li key={index}>
                         <p className="text-lg font-semibold mb-2">{question}</p>
                         <div>
-                            <button type="button" onClick={() => handleAnswerChange(index, 'Yes')}>Yes</button>
-                            <button onClick={() => handleAnswerChange(index, 'No')}>No</button>
+                            {/* <button type="button" onClick={() => handleAnswerChange(index, 'Yes')}>Yes</button> */}
+                            <button className={`${styles['option-button']} ${answers['Yes'] === 'Yes' ? styles['selected'] : ''}`} onClick={() => handleAnswerChange(index, 'Yes')}>Yes</button>
+                            <button className={`${styles['option-button']} ${answers['No'] === 'No' ? styles['selected'] : ''}`} onClick={() => handleAnswerChange(index, 'No')}>No</button>
+                            {/* <button onClick={() => handleAnswerChange(index, 'No')}>No</button> */}
                         </div>
                     </li>
                 ))}
