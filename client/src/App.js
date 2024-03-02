@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       {/* <DepressionTest /> */}
       {/* <Depress3 /> */}
-      {/* <Anxiety2 /> */}
-      <PTSD />
+      <Anxiety2 />
+      {/* <PTSD /> */}
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />

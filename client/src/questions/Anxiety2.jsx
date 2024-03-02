@@ -52,7 +52,7 @@ const Anxiety2 = () => {
     return (
         <div className="container mx-auto mt-8">
             <h1 className="text-3xl font-bold mb-4">Anxiety 2</h1>
-            <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md">
+            <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md text-justify">
                 <div className="mb-4">
                     <label className="text-lg font-semibold mb-2">Question 1: Do you often feel nervous or on edge?</label>
                     <div>
