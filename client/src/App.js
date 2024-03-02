@@ -5,13 +5,15 @@ import RoomPage from "./screens/Room";
 import DepressionTest from "./questions/Depress.jsx";
 import Depress3 from "./questions/Depress3.jsx";
 import Anxiety2 from "./questions/Anxiety2.jsx";
+import PTSD from "./questions/PTSD.jsx";
 
 function App() {
   return (
     <div className="App">
       {/* <DepressionTest /> */}
       {/* <Depress3 /> */}
-      <Anxiety2 />
+      {/* <Anxiety2 /> */}
+      <PTSD />
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />

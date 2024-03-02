@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Depress3.module.css';
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
-
+import { db } from '../firebase';
 
 const Anxiety2 = () => {
     const [answers, setAnswers] = useState({});
@@ -13,6 +13,11 @@ const Anxiety2 = () => {
 
     const handleChange = (questionId, value) => {
         setAnswers({ ...answers, [questionId]: value });
+
+        db.collection('answers').doc(questionId).set({ value })
+            .then(() => console.log('Answer saved to Firestore'))
+            .catch((error) => console.error('Error saving answer:', error));
+
     };
 
     const handleSubmit = (e) => {
