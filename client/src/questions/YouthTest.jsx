@@ -26,15 +26,15 @@ const YouthTest = () => {
         let score = Object.values(answers).reduce((acc, val) => acc + parseInt(val), 0);
         let depressionLevel = '';
         if (score <= 10) {
-            depressionLevel = 'No Indication of Addiction';
+            depressionLevel = 'Based on your Responses, it indicates you are at a lower risk. In this case, you must continue practicing healthy coping mechanisms and seek professional support if needed.';
         }
         else if (score <= 20) {
-            depressionLevel = 'Mild or Moderate Risk of Addiction';
+            depressionLevel = 'Based on your Responses, it indicates you are at moderate risk. In this case, you must seek additional support or counseling to address any emerging concerns and learn additional coping strategies.';
         }
         else if (score <= 30) {
-            depressionLevel = 'High Risk of Addiction';
+            depressionLevel = 'High Risk';
         } else {
-            depressionLevel = 'High Risk of Addiction';
+            depressionLevel = 'Extremely High Risk';
         }
         setResult(depressionLevel);
         setModalIsOpen(true);
@@ -51,12 +51,12 @@ const YouthTest = () => {
 
     return (
         <div className="container mx-auto mt-8">
-            <h1 className="text-3xl font-bold mb-4">Addiction Test</h1>
-            <div>Info about Addiction</div>
+            <h1 className="text-3xl font-bold mb-4">Youth Psychological well-being Test</h1>
+            <div>The questionnaire that follows can be used to see if you are having emotional, attentional, or behavioral difficulties. <br /> For each item please mark how often you:</div>
             <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md text-justify">
 
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">In the past year, have you found that you needed to consume larger amounts of a substance to achieve the same effect (tolerance)?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you feel sad or hopeless?</label>
                     <div>
                         <button
                             type="button"
@@ -78,7 +78,7 @@ const YouthTest = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Have you experienced withdrawal symptoms when you stopped or reduced your substance use, such as nausea, sweating, tremors, or anxiety?</label>
+                    <label>Do you have trouble concentrating or paying attention?</label>
                     <div>
                         <button
                             type="button"
@@ -88,13 +88,13 @@ const YouthTest = () => {
                             Not at all
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q2'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q2', '2')}>
-                            Rarely
+                            Sometimes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q2'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q2', '3')}>
-                            Ocassionally
+                            Often
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q2'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q2', '4')}>
-                            Frequently
+                            Always
                         </button>
                     </div>
                 </div>
@@ -121,49 +121,50 @@ const YouthTest = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Do you spend a significant amount of time obtaining, using, or recovering from the effects of a substance?</label>
+                    <label>How would you rate your stress level?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q4'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q4', '1')}
                         >
-                            Not at all
+                            Low
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '2')}>
-                            Rarely
+                            Moderate
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '3')}>
-                            Ocassionally
+                            High
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '4')}>
-                            Frequently
+                            Very High
                         </button>
                     </div>
                 </div>
+
                 <div className="mb-4">
-                    <label>Have you neglected responsibilities at work, school, or home because of your substance use?</label>
+                    <label>Have you experienced changes in your sleeping patterns (e.g., trouble falling asleep, waking up frequently)?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q5'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q5', '1')}
                         >
-                            Not at all
+                            No Changes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '2')}>
-                            Rarely
+                            Occasionally
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '3')}>
-                            Ocassionally
+                            Frequently
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '4')}>
-                            Frequently
+                            Constantly
                         </button>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Have you continued to use a substance despite knowing it has caused or worsened physical or psychological problems?</label>
+                    <label>Do you often feel overwhelmed by your emotions?</label>
                     <div>
                         <button
                             type="button"
@@ -184,7 +185,7 @@ const YouthTest = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Have you experienced cravings or strong urges to use a substance?</label>
+                    <label>Have you experienced a significant decrease in appetite or weight loss recently?</label>
                     <div>
                         <button
                             type="button"
@@ -206,28 +207,28 @@ const YouthTest = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Have you engaged in risky behaviors while under the influence of a substance, such as driving or operating machinery?</label>
+                    <label>How would you rate your self-esteem?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q8'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q8', '1')}
                         >
-                            Not at all
+                            Very Low
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '2')}>
-                            Rarely
+                            Low
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '3')}>
-                            Ocassionally
+                            Moderate
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '4')}>
-                            Frequently
+                            High
                         </button>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Have you experienced interpersonal problems, such as arguments or conflicts, due to your substance use?</label>
+                    <label>Have you had thoughts of self-harm or suicide?</label>
                     <div>
                         <button
                             type="button"
@@ -249,23 +250,23 @@ const YouthTest = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Have you experienced legal problems as a result of your substance use, such as arrests or legal charges?</label>
+                    <label>How satisfied are you with your social life?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q10'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q10', '1')}
                         >
-                            Not at all
+                            Very Satisfied
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '2')}>
-                            Rarely
+                            Moderately Satisfied
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '3')}>
-                            Ocassionally
+                            Dissatisfied
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '4')}>
-                            Frequently
+                            Very Dissatisfied
                         </button>
                     </div>
                 </div>
