@@ -121,29 +121,29 @@ const EDTest = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>How would you rate your stress level?</label>
+                    <label>Do you find yourself preoccupied with thoughts of food, even when you're not hungry?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q4'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q4', '1')}
                         >
-                            Low
+                            Never
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '2')}>
-                            Moderate
+                            Rarely
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '3')}>
-                            High
+                            Sometimes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q4'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q4', '4')}>
-                            Very High
+                            Often
                         </button>
                     </div>
                 </div>
 
                 <div className="mb-4">
-                    <label>Have you experienced changes in your sleeping patterns (e.g., trouble falling asleep, waking up frequently)?</label>
+                    <label>Have you experienced a significant increase or decrease in appetite recently?</label>
                     <div>
                         <button
                             type="button"
@@ -153,18 +153,18 @@ const EDTest = () => {
                             No Changes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '2')}>
-                            Occasionally
+                            Slight Changes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '3')}>
-                            Frequently
+                            Moderate Changes
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q5'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q5', '4')}>
-                            Constantly
+                            Significant Changes
                         </button>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Do you often feel overwhelmed by your emotions?</label>
+                    <label>Do you feel a sense of loss of control over your eating behaviors, particularly during binge eating episodes?</label>
                     <div>
                         <button
                             type="button"
@@ -180,7 +180,7 @@ const EDTest = () => {
                             Ocassionally
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q6'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q6', '4')}>
-                            Frequently
+                            Often
                         </button>
                     </div>
                 </div>
@@ -207,66 +207,66 @@ const EDTest = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>How would you rate your self-esteem?</label>
+                    <label>Do you feel preoccupied with food, weight, or calories to the extent that it interferes with your daily activities or relationships?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q8'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q8', '1')}
                         >
-                            Very Low
+                            Not at all
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '2')}>
-                            Low
+                            Slightly
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '3')}>
-                            Moderate
+                            Moderately
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q8'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q8', '4')}>
-                            High
+                            Extremely
                         </button>
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Have you had thoughts of self-harm or suicide?</label>
+                    <label>How would you rate your perception of your body size and shape?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q9'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q9', '1')}
                         >
-                            Not at all
+                            Accurate perception
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q9'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q9', '2')}>
-                            Rarely
+                            Slightly distorted perception
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q9'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q9', '3')}>
-                            Ocassionally
+                            Moderately distorted perception
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q9'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q9', '4')}>
-                            Frequently
+                            Severely distorted perception
                         </button>
                     </div>
                 </div>
 
                 <div className="mb-4">
-                    <label>How satisfied are you with your social life?</label>
+                    <label>Do you experience physical symptoms such as dizziness, fatigue, or irregular heartbeat due to food restriction or purging behaviors?</label>
                     <div>
                         <button
                             type="button"
                             className={`${styles['option-button']} ${answers['q10'] === '1' ? styles['selected'] : ''}`}
                             onClick={() => handleChange('q10', '1')}
                         >
-                            Very Satisfied
+                            Never
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '2')}>
-                            Moderately Satisfied
+                            Occasionally
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '3')}>
-                            Dissatisfied
+                            Frequently
                         </button>
                         <button type="button" className={`${styles['option-button']} ${answers['q10'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q10', '4')}>
-                            Very Dissatisfied
+                            Always
                         </button>
                     </div>
                 </div>
