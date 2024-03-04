@@ -47,7 +47,7 @@ const Depress3 = () => {
     return (
         <div className="container mx-auto mt-8">
             <h1 className="text-3xl font-bold mb-4">Depression Test 3</h1>
-            <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md text-justify">
+            <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md text-justify ml-[30px]">
                 <div className="mb-4">
                     <label className="text-lg font-semibold mb-2">Question 1: Do you often feel sad or empty?</label>
                     <div>

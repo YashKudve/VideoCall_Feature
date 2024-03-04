@@ -15,13 +15,13 @@ function App() {
   return (
     <div className="App">
       {/* <DepressionTest /> */}
-      {/* <Depress3 /> */}
+      <Depress3 />
       {/* <Anxiety2 /> */}
       {/* <PTSD /> */}
       {/* <PTSDTest /> */}
       {/* <Bipolar /> */}
       {/* <YouthTest /> */}
-      <EDTest />
+      {/* <EDTest /> */}
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />

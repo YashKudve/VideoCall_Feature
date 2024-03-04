@@ -26,7 +26,7 @@ const EDTest = () => {
         let score = Object.values(answers).reduce((acc, val) => acc + parseInt(val), 0);
         let depressionLevel = '';
         if (score <= 10) {
-            depressionLevel = 'Based on your Responses, it indicates you are at a lower risk. In this case, you must continue practicing healthy coping mechanisms and seek professional support if needed.';
+            depressionLevel = 'Based on your Responses, it indicates that you are not having any eating disorder. In this case, you must continue to maintain a healthy diet.';
         }
         else if (score <= 20) {
             depressionLevel = 'Based on your Responses, it indicates you are at moderate risk. In this case, you must seek additional support or counseling to address any emerging concerns and learn additional coping strategies.';
