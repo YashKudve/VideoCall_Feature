@@ -10,18 +10,20 @@ import PTSDTest from "./questions/PTSD2.jsx";
 import Bipolar from "./questions/Bipolar.jsx";
 import YouthTest from "./questions/YouthTest.jsx";
 import EDTest from "./questions/EDTest.jsx";
+import PST from "./questions/PST.jsx";
 
 function App() {
   return (
     <div className="App">
       {/* <DepressionTest /> */}
-      <Depress3 />
+      {/* <Depress3 /> */}
       {/* <Anxiety2 /> */}
       {/* <PTSD /> */}
       {/* <PTSDTest /> */}
       {/* <Bipolar /> */}
       {/* <YouthTest /> */}
       {/* <EDTest /> */}
+      <PST />
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />

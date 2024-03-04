@@ -2,23 +2,24 @@ import React, { useState } from 'react';
 import styles from './Depress3.module.css';
 import Modal from 'react-modal';
 
-function PST() {
+function PTSDTest() {
     const [responses, setResponses] = useState({});
     const [submitted, setSubmitted] = useState(false);
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
 
     const questions = [
-        "Have you experienced or witnessed a life-threatening event?",
-        "Do you often have vivid memories or flashbacks of the traumatic event?",
-        "Do you avoid situations, places, or people that remind you of the traumatic event?",
-        "Have you noticed an increase in irritability or anger since the traumatic event?",
-        "Do you have difficulty sleeping or suffer from frequent nightmares?",
-        "Have you lost interest in activities or hobbies that you once enjoyed?",
-        "Do you often feel detached or estranged from others?",
-        "Have you experienced intense feelings of guilt or shame related to the traumatic event?",
-        "Do you frequently experience heightened anxiety or panic attacks?",
-        "Have you noticed changes in your mood, such as feeling numb or emotionally numb?"
+        "Do familiar surroundings sometimes seem strange, confusing, threatening or unreal to you?",
+        "Have you heard unusual sounds like banging, clicking, hissing, clapping or ringing in your ears?",
+        "Do things that you see appear different from the way they usually do?",
+        "Have you had experiences with telepathy, psychic forces, or fortune telling?",
+        "Have you felt that you are not in control of your own ideas or thoughts?",
+        "Do you have strong feelings or beliefs about being unusually gifted or talented in some way?",
+        "Do you sometimes get strange feelings on or just beneath your skin, like bugs crawling?",
+        " Do you sometimes feel suddenly distracted by distant sounds that you are not normally aware of?",
+        "Have you been confused at times whether something you experienced was real or imaginary?",
+        "Are your thoughts sometimes so strong that you can almost hear them?",
+        "Have you seen unusual things like flashes, flames, blinding light, or geometric figures?"
     ];
 
     const handleResponse = (index, response) => {
@@ -59,17 +60,14 @@ function PST() {
 
     return (
         <div className="container mx-auto mt-8">
-            <h1 className="text-3xl font-bold mb-4">PTSD Screening Test</h1>
-            <h4 className="text-2xl font-semibold mb-2">Post-Traumatic Stress Disorder Test</h4>
+            <div className="bg-blue-700 p-[50px]">
+                <h1 className="text-3xl font-bold mb-4 text-white">Psychosis & Schizophrenia Test</h1></div>
+            {/* <h4 className="text-2xl font-semibold mb-2">Post-Traumatic Stress Disorder Test</h4> */}
             <br />
             <div className="text-left">
-                <span>Sometimes things happen to people that are unusually or especially frightening, - horrible, or traumatic. For example:</span><br />
-                <span>- a serious accident or fire </span> <br />
-                <span> - a physical or sexual assault or abuse </span><br />
-                <span> - an earthquake or flood</span> <br />
-                <span>- a war </span><br />
-                <span>- seeing someone be killed or seriously injured </span><br />
-                <span> - having a loved one die through homicide or suicide.</span> <br />
+                <h4>In the past few weeks, have you had the following thoughts, feelings, or experiences? Check <span className='font-semibold'>“yes”</span> or <span className='font-semibold'>“no”</span> for each item.</h4> <br />
+
+                Do not include experiences that occur only while under the influence of alcohol, drugs or medications that were not prescribed to you.
             </div>
             <span className="font-bold">Have you ever experienced this kind of event?</span>
             <p>Answer the following questions with <span className="font-bold">Yes</span> or <span className="font-bold">No:</span></p>
@@ -80,14 +78,14 @@ function PST() {
                         <button
                             type="button"
                             onClick={() => handleResponse(index, "yes")}
-                            style={{ marginRight: '20px', padding: '10px', border: '3px solid green', width: '80px', borderRadius: '8px', background: responses[index] === 'yes' ? 'green' : 'white' }}
+                            style={{ marginRight: '20px', padding: '10px', border: '3px solid #b2b2b2', width: '80px', borderRadius: '8px', background: responses[index] === 'yes' ? 'green' : 'white' }}
                         >
                             Yes
                         </button>
                         <button
                             type="button"
                             onClick={() => handleResponse(index, "no")}
-                            style={{ marginRight: '20px', padding: '10px', border: '3px solid red', width: '80px', borderRadius: '8px', background: responses[index] === 'no' ? 'red' : 'white' }}
+                            style={{ marginRight: '20px', padding: '10px', border: '3px solid #b2b2b2', width: '80px', borderRadius: '8px', background: responses[index] === 'no' ? 'red' : 'white' }}
                         >
                             No
                         </button>
@@ -126,4 +124,4 @@ function PST() {
     );
 }
 
-export default PST;
+export default PTSDTest;
