@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Depress3.module.css';
 import Modal from 'react-modal';
 
-function PTSDTest() {
+function PST() {
     const [responses, setResponses] = useState({});
     const [submitted, setSubmitted] = useState(false);
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -63,6 +63,7 @@ function PTSDTest() {
             <div className="bg-blue-700 p-[50px]">
                 <h1 className="text-3xl font-bold mb-4 text-white">Psychosis & Schizophrenia Test</h1></div>
             {/* <h4 className="text-2xl font-semibold mb-2">Post-Traumatic Stress Disorder Test</h4> */}
+            <h4>Psychosis is a condition in which someone has lost touch with reality. Its two main symptoms are hallucinations and delusions. Psychosis can have several causes, such as mental health disorders, medical conditions, or substance use. Schizophrenia is a mental health disorder that includes periods of psychosis.</h4>
             <br />
             <div className="text-left">
                 <h4>In the past few weeks, have you had the following thoughts, feelings, or experiences? Check <span className='font-semibold'>“yes”</span> or <span className='font-semibold'>“no”</span> for each item.</h4> <br />
@@ -124,4 +125,4 @@ function PTSDTest() {
     );
 }
 
-export default PTSDTest;
+export default PST;

@@ -30,6 +30,7 @@ const Anxiety2 = () => {
         }
         else if (score <= 20) {
             depressionLevel = 'Mild Anxiety';
+            // Based on your responses, you might
         }
         else if (score <= 30) {
             depressionLevel = 'Moderate Anxiety';
@@ -259,7 +260,7 @@ const Anxiety2 = () => {
             //     className="modal"
             // overlayClassName="overlay"
             >
-                <h2 className="text-2xl font-bold mb-4">Result</h2>
+                <h2 className="text-2xl font-bold mb-4 self-center align-center">Result</h2>
                 <p className="mb-4">{result}</p>
                 <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10" onClick={closeModal}>Close</button>
             </Modal>
