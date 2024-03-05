@@ -103,21 +103,25 @@ function PST() {
 
 
                 {submitted && (
-                    <div>
+                    <div className="">
                         <h2 className="font-semibold">Score: {score}</h2>
-                        {hasPTSD && <p>You may have PTSD. Please seek professional help for further evaluation.</p>}
-                        {!hasPTSD && <p>You may <span className="font-bold">not</span> have PTSD based on your responses. Still you can seek professional help for further evaluation!</p>}
+                        {hasPTSD && <h1>Based on your responses, you may have Psychosis & Schizophrenia Disorder. Please seek professional help for further evaluation.</h1>}
+                        {!hasPTSD && <h1>Based on your resposes, you may <span className="font-bold">not</span> have Psychosis & Schizophrenia Disorder. Still you can seek professional help for further evaluation!</h1>}
                         <br />
-                        <h2>Responses:</h2>
+                        {/* <h2>Responses:</h2>
                         <ul>
                             {Object.entries(responses).map(([index, response]) => (
                                 <li key={index}>{questions[index]}: {response}</li>
                             ))}
-                        </ul>
+                        </ul> */}
 
                     </div>
                 )}
-                <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10" onClick={closeModal}>Close</button>
+                <div className="gap-8 flex flex-row">
+                <button className="py-4 px-6 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10" onClick={closeModal}>Close</button>
+
+                <button className="py-4 px-6 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10" onClick="">YouTube</button>
+                </div>
             </Modal>
 
 
