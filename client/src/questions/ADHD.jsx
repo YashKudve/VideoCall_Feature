@@ -26,15 +26,15 @@ const ADHD = () => {
         let score = Object.values(answers).reduce((acc, val) => acc + parseInt(val), 0);
         let depressionLevel = '';
         if (score <= 10) {
-            depressionLevel = 'No Indication of Addiction';
+            depressionLevel = 'Negative ADHD Diagnosis: The test results indicate that the individual does not exhibit enough symptoms or impairment to meet the criteria for an ADHD diagnosis.';
         }
         else if (score <= 20) {
-            depressionLevel = 'Mild or Moderate Risk of Addiction';
+            depressionLevel = 'Based on the specific symptoms reported, you have symptoms that are suggestive of ADHD but do not fully meet the diagnostic criteria.';
         }
         else if (score <= 30) {
-            depressionLevel = 'High Risk of Addiction';
+            depressionLevel = 'Based on the specific symptoms reported, it indicates the subtype of ADHD. This could be predominantly inattentive type, predominantly hyperactive-impulsive type, or combined type.';
         } else {
-            depressionLevel = 'High Risk of Addiction';
+            depressionLevel = 'Positive ADHD diagnosis. Test results indicate that you have significant number of symptoms associated with ADHD, particularly those related to inattention, hyperactivity, and impulsivity, a positive diagnosis may be made.';
         }
         setResult(depressionLevel);
         setModalIsOpen(true);
@@ -56,7 +56,7 @@ const ADHD = () => {
             <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-md text-justify">
 
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">In the past year, have you found that you needed to consume larger amounts of a substance to achieve the same effect (tolerance)?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</label>
                     <div>
                         <button
                             type="button"
@@ -78,7 +78,7 @@ const ADHD = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you experienced withdrawal symptoms when you stopped or reduced your substance use, such as nausea, sweating, tremors, or anxiety?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you have difficulty getting things in order when you have to do a task that requires organization?</label>
                     <div>
                         <button
                             type="button"
@@ -100,7 +100,7 @@ const ADHD = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you unsuccessfully attempted to cut down or control your substance use in the past year?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you have problems remembering appointments or obligations?</label>
                     <div>
                         <button
                             type="button"
@@ -121,7 +121,7 @@ const ADHD = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Do you spend a significant amount of time obtaining, using, or recovering from the effects of a substance?</label>
+                    <label className="text-lg font-semibold mb-2"> When you have a task that requires a lot of thought, how often do you avoid or delay getting started?</label>
                     <div>
                         <button
                             type="button"
@@ -142,7 +142,7 @@ const ADHD = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you neglected responsibilities at work, school, or home because of your substance use?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you feel overly active and compelled to do things, like you were driven by a motor?</label>
                     <div>
                         <button
                             type="button"
@@ -163,7 +163,7 @@ const ADHD = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you continued to use a substance despite knowing it has caused or worsened physical or psychological problems?</label>
+                    <label className="text-lg font-semibold mb-2"> How often do you make careless mistakes when you have to work on a boring or difficult project?</label>
                     <div>
                         <button
                             type="button"
@@ -184,7 +184,7 @@ const ADHD = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you experienced cravings or strong urges to use a substance?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you have difficulty keeping your attention when you are doing boring or repetitive work?</label>
                     <div>
                         <button
                             type="button"
@@ -206,7 +206,7 @@ const ADHD = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you engaged in risky behaviors while under the influence of a substance, such as driving or operating machinery?</label>
+                    <label className="text-lg font-semibold mb-2">How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?</label>
                     <div>
                         <button
                             type="button"
@@ -227,7 +227,7 @@ const ADHD = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-lg font-semibold mb-2">Have you experienced interpersonal problems, such as arguments or conflicts, due to your substance use?</label>
+                    <label className="text-lg font-semibold mb-2">When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?</label>
                     <div>
                         <button
                             type="button"
@@ -249,7 +249,7 @@ const ADHD = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label>Have you experienced legal problems as a result of your substance use, such as arrests or legal charges?</label>
+                    <label className="text-lg font-semibold mb-2">Have you experienced legal problems as a result of your substance use, such as arrests or legal charges?</label>
                     <div>
                         <button
                             type="button"
@@ -269,7 +269,29 @@ const ADHD = () => {
                         </button>
                     </div>
                 </div>
-                {/* Add more questions like this */}
+
+                <div className="mb-4">
+                    <label className="text-lg font-semibold mb-2">How often do you have difficulty unwinding and relaxing when you have time to yourself?</label>
+                    <div>
+                        <button
+                            type="button"
+                            className={`${styles['option-button']} ${answers['q11'] === '1' ? styles['selected'] : ''}`}
+                            onClick={() => handleChange('q11', '1')}
+                        >
+                            Not at all
+                        </button>
+                        <button type="button" className={`${styles['option-button']} ${answers['q11'] === '2' ? styles['selected'] : ''}`} onClick={() => handleChange('q11', '2')}>
+                            Rarely
+                        </button>
+                        <button type="button" className={`${styles['option-button']} ${answers['q11'] === '3' ? styles['selected'] : ''}`} onClick={() => handleChange('q11', '3')}>
+                            Ocassionally
+                        </button>
+                        <button type="button" className={`${styles['option-button']} ${answers['q11'] === '4' ? styles['selected'] : ''}`} onClick={() => handleChange('q11', '4')}>
+                            Frequently
+                        </button>
+                    </div>
+                </div>
+                
                 <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-10">Submit</button>
             </form>
             {/* {result && <div>Result: {result}</div>} */}
