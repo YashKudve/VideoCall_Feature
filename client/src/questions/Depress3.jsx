@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Depress3.module.css';
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
-
+import depress from './img/depress.png';
 
 const Depress3 = () => {
     const [answers, setAnswers] = useState({});
@@ -253,8 +253,11 @@ const Depress3 = () => {
             //     className="modal"
             // overlayClassName="overlay"
             >
+                <div className='align-center self-center'>
                 <h2 className="text-2xl font-bold mb-4">Result</h2>
                 <p className="mb-4">{result}</p>
+                <img src={depress} alt='Depression image'/>
+                </div>
                 <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10" onClick={closeModal}>Close</button>
             </Modal>
         </div>

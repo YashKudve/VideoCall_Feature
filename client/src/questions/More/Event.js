@@ -4,18 +4,24 @@ function Event(){
     const events=[
         {
             heading:"Event1",
-            subheading:"",
-            direction:"",
+            subHeading:"hfridhv",
+            direction:"right",
         },
         {
             heading:"Event1",
-            subheading:"",
-            direction:"",
+            subHeading:"kjnf",
+            direction:"left",
         },
         {
             heading:"Event1",
-            subheading:"",
-            direction:"",
+            subHeading:"kjdfnk",
+            direction:"right",
         },
-    ]
+    ];
+    return (
+        <div>
+            <TimeLine events={events} />
+        </div>
+    );
 }
+export default Event;

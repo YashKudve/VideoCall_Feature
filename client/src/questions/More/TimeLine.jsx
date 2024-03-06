@@ -1,15 +1,33 @@
 import React, { Fragment } from 'react'
-
-const TimeLine = ({events}) => {
+import Event from './Event.js'
+const TimeLine = () => {
+    // console.log(events)
+    const events=[
+        {
+            heading:"Event1",
+            subHeading:"hfridhv",
+            direction:"right",
+        },
+        {
+            heading:"Event1",
+            subHeading:"kjnf",
+            direction:"left",
+        },
+        {
+            heading:"Event1",
+            subHeading:"kjdfnk",
+            direction:"right",
+        },
+    ];
   return (
     <div className="flex flex-col gap-y-3 w-full my-4">
-      <Circle/>
+      {/* <Circle/> */}
 
-    {events.map((event,key)=>{
+    {events.map((event,key)=>(
         <Fragment key={key}>
-            <div className="grid grid-cols-[1fr-auto-1fr] gap-x-2 items-center mx-auto">
-                {event.direction === 'left' ? (
-                    <EventCard heading={event.heading} subHeading={event.subHeading}/>
+            <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
+                {event.direction === "left" ? (
+                    <EventCard heading={event[key].heading} subHeading={event[key].subHeading}/>
                 ):(
                     <div></div>
                 )
@@ -17,22 +35,24 @@ const TimeLine = ({events}) => {
 
                 <Pillar/>
 
-                {event.direction === 'right' ? (
-                    <EventCard heading={event.heading} subHeading={event.subHeading}/>
+                {event[key].direction === 'right' ? (
+                    <EventCard heading={event[key].heading} subHeading={event[key].subHeading}/>
                 ):(
                     <div></div>
                 )
                 }
             </div>
+
+            {key<(events.length - 1) && <Circle/>}
         </Fragment>
-    })}
+    ))}
 
       <Circle/>
     </div>
   )
 }
 
-export default TimeLine;
+
 
 const Circle = () =>{
     return(
@@ -55,3 +75,5 @@ const EventCard = ({heading,subHeading}) =>{
         </div>
     )
 }
+
+export default TimeLine;

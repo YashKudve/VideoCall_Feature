@@ -13,6 +13,8 @@ import EDTest from "./questions/EDTest.jsx";
 import PST from "./questions/PST.jsx";
 import ADHD from "./questions/ADHD.jsx";
 import TreatInfo from "./questions/More/TreatInfo.jsx";
+import TimeLine from "./questions/More/TimeLine.jsx";
+import T1 from "./questions/More/T1.jsx";
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
       {/* <EDTest /> */}
       {/* <PST /> */}
       {/* <ADHD/> */}
-      <TreatInfo/>
+      {/* // <TreatInfo/> */}
+      <TimeLine/>
+      {/* <T1/> */}
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
