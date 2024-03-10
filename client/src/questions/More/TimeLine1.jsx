@@ -31,14 +31,26 @@ const TimeLine = () => {
         
     ];
 
+    // const bgImg = {
+    //     backgroundImage:
+    //         "url('https://cdn.pixabay.com/photo/2022/06/24/17/35/relaxation-7282116_1280.jpg')",
+    //     height: "100vh",
+    //     marginTop: "-70px",
+    //     fontSize: "",
+    //     backgroundSize: "fit",
+    //     backgroundRepeat: "no-repeat",
+        
+    // };
+
     return (
-        <div className="flex flex-col gap-y-3 w-full my-4">
+        <div className="flex flex-col gap-y-3 w-full my-4 z-10">
+            
             <span className='text-lg font-bold'>Mental Health Treatment Roadmap</span>
             <Circle />
             {events.map((event, key) => (
                 
                 <Fragment key={key}>
-                    <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto">
+                    <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto mr-10 ml-10">
                         {event.direction === "left" ? (
                             <EventCard heading={event.heading} subHeading={event.subHeading} />
                         ) : (
@@ -59,7 +71,8 @@ const TimeLine = () => {
             ))}
 
             <Circle />
-        </div>
+            </div>
+        
     );
 };
 
