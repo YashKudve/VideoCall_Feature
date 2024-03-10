@@ -16,7 +16,7 @@ import TreatInfo from "./questions/More/TreatInfo.jsx";
 import TimeLine from "./questions/More/TimeLine.jsx";
 import TimeLine1 from "./questions/More/TimeLine1.jsx";
 import T1 from "./questions/More/T1.jsx";
-import T2 from "./questions/More/T2.jsx";
+import T2 from "./questions/More/TimeLine2.jsx";
 
 function App() {
   return (
