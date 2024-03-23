@@ -15,8 +15,10 @@ import ADHD from "./questions/ADHD.jsx";
 import TreatInfo from "./questions/More/TreatInfo.jsx";
 import TimeLine from "./questions/More/TimeLine.jsx";
 import TimeLine1 from "./questions/More/TimeLine1.jsx";
-import T1 from "./questions/More/T1.jsx";
 import T2 from "./questions/More/TimeLine2.jsx";
+import AddictionTest from "./questions/AddictionTest.jsx";
+import Addiction from "./newQuestion/Addiction.jsx";
+import A2 from "./newQuestion/A2.jsx";
 
 function App() {
   return (
@@ -29,13 +31,15 @@ function App() {
       {/* <Bipolar /> */}
       {/* <YouthTest /> */}
       {/* <EDTest /> */}
+      {/* <AddictionTest/> */}
       {/* <PST /> */}
       {/* <ADHD/> */}
       {/* // <TreatInfo/> */}
       {/* <TimeLine/> */}
       {/* <TimeLine1 /> */}
-      <T2/>
-      {/* <T1/> */}
+      {/* <T2/> */}
+      {/* <Addiction/> */}
+      <A2/>
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />

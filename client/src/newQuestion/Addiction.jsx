@@ -1,31 +1,24 @@
 import React, { useState } from "react";
-import styles from "./Depress3.module.css";
+import styles from "../questions/Depress3.module.css";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
-import { db } from "../firebase";
+import jsPDF from "jspdf";
 
-const AddictionTest = () => {
+const Addiction = () => {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const history = useNavigate();
 
-  const handleChange = (questionId, value) => {
-    setAnswers({ ...answers, [questionId]: value });
-
-    db.collection("answers")
-      .doc(questionId)
-      .set({ value })
-      .then(() => console.log("Answer saved to Firestore"))
-      .catch((error) => console.error("Error saving answer:", error));
+  const handleChange = (questionId, value, questionText) => {
+    setAnswers({ ...answers, [questionId]: { value, text: questionText } });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Calculate depression level based on answers
     let score = Object.values(answers).reduce(
-      (acc, val) => acc + parseInt(val),
+      (acc, val) => acc + parseInt(val.value),
       0
     );
     let depressionLevel = "";
@@ -40,13 +33,22 @@ const AddictionTest = () => {
     }
     setResult(depressionLevel);
     setModalIsOpen(true);
-    setAnswers({});
   };
 
   const closeModal = () => {
     setModalIsOpen(false);
-    // Navigate to next page
-    history.push("/next-page"); // Replace '/next-page' with the actual URL of the next page
+    history.push("/next-page"); // Navigate to next page
+  };
+
+  const downloadPDF = () => {
+    const doc = new jsPDF();
+    doc.text("Addiction Test Report", 10, 10);
+    doc.text("Result: " + result, 10, 20);
+    doc.text("Question Responses:", 10, 30);
+    Object.entries(answers).forEach(([questionId, { value, text }]) => {
+      doc.text(`${text}: ${value}`, 10, doc.autoTable.previous.finalY + 10);
+    });
+    doc.save("AddictionTestReport.pdf");
   };
 
   return (
@@ -508,7 +510,6 @@ const AddictionTest = () => {
           Submit
         </button>
       </form>
-      {/* {result && <div>Result: {result}</div>} */}
 
       <Modal
         isOpen={modalIsOpen}
@@ -519,6 +520,12 @@ const AddictionTest = () => {
         <p className="mb-4">{result}</p>
         <button
           className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-10"
+          onClick={downloadPDF}
+        >
+          Download PDF Report
+        </button>
+        <button
+          className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600 mt-2"
           onClick={closeModal}
         >
           Close
@@ -528,4 +535,4 @@ const AddictionTest = () => {
   );
 };
 
-export default AddictionTest;
+export default Addiction;
