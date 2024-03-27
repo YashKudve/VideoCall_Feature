@@ -14,12 +14,13 @@ import PST from "./questions/PST.jsx";
 import ADHD from "./questions/ADHD.jsx";
 import TreatInfo from "./questions/More/TreatInfo.jsx";
 import TimeLine from "./questions/More/TimeLine.jsx";
-import TimeLine1 from "./questions/More/TimeLine1.jsx";
+import TimeLine1 from "./questions/More/T3.jsx";
 import T2 from "./questions/More/TimeLine2.jsx";
 import AddictionTest from "./questions/AddictionTest.jsx";
 import Addiction from "./newQuestion/Addiction.jsx";
 import A2 from "./newQuestion/A2.jsx";
 import A3 from "./newQuestion/A3.jsx";
+import T3 from "./questions/More/T3.jsx";
 
 function App() {
   return (
@@ -39,9 +40,10 @@ function App() {
       {/* <TimeLine/> */}
       {/* <TimeLine1 /> */}
       {/* <T2/> */}
+      <T3/>
       {/* <Addiction/> */}
       {/* <A2/> */}
-      <A3/>
+      {/* <A3/> */}
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
