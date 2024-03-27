@@ -1,19 +1,17 @@
-import React, { useState, useRef } from "react";
-import styles from "../questions/Depress3.module.css";
+import React, { useState } from "react";
+import styles from "./Depress3.module.css";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase";
-import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
-const A2 = () => {
+const A3 = () => {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
   const history = useNavigate();
-  const formRef = useRef(null);
 
   const handleChange = (questionId, value) => {
     setAnswers({ ...answers, [questionId]: value });
@@ -55,16 +53,22 @@ const A2 = () => {
   };
 
   const downloadReport = () => {
-    html2canvas(formRef.current).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, "PNG", 0, 0);
-      pdf.save("addiction_test_report.pdf");
+    const pdf = new jsPDF();
+    let y = 10;
+
+    // Add selected questions and options to the PDF
+    Object.entries(answers).forEach(([question, answer]) => {
+      pdf.text(`Question: ${question}`, 10, y);
+      y += 10;
+      pdf.text(`Answer: ${answer}`, 10, y);
+      y += 10;
     });
+
+    pdf.save("addiction_test_report.pdf");
   };
 
   return (
-    <div className="container mx-auto mt-8" ref={formRef}>
+    <div className="container mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-4">Addiction Test</h1>
       <div>Info about Addiction</div>
       <form
@@ -550,4 +554,4 @@ const A2 = () => {
   );
 };
 
-export default A2;
+export default A3;

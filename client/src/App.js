@@ -19,6 +19,7 @@ import T2 from "./questions/More/TimeLine2.jsx";
 import AddictionTest from "./questions/AddictionTest.jsx";
 import Addiction from "./newQuestion/Addiction.jsx";
 import A2 from "./newQuestion/A2.jsx";
+import A3 from "./newQuestion/A3.jsx";
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <TimeLine1 /> */}
       {/* <T2/> */}
       {/* <Addiction/> */}
-      <A2/>
+      {/* <A2/> */}
+      <A3/>
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
