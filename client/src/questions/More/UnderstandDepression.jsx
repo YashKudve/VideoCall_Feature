@@ -126,7 +126,7 @@ const UnderstandDepression = () => {
   return (
     <div className="flex flex-col gap-y-3 w-full my-4 z-10">
       <span className="text-3xl font-bold bg-green-700 text-white p-7 rounded-lg">
-        Understanding Depression (T3)
+        Understanding Depression
       </span>
       <Circle />
       {events.map((event, key) => (

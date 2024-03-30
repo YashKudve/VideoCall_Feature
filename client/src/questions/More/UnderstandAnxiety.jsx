@@ -12,15 +12,16 @@ const UnderstandAnxiety = () => {
         "Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else.",
       description: `
       <div class="text-left">
-      <p>Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else. Anxiety can also affect your appetite and make it hard to sleep.</p>
-      <p>Depression is a type of mental health condition called a mood disorder. Mood disorders occur when changes in mood go beyond the normal ups and downs we all experience from day to day. Episodes of depression last at least two weeks at a time, but sometimes they can last for months or even years.</p>
-      <p>Depression goes way beyond just feeling sad. Some of the symptoms that people with depression experience include:</p>
+      <p>Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else. Anxiety can also affect your appetite and make it hard to sleep.</p> <br/>
+
+      <p>A little anxiety can be useful. For example, if you’re anxious about an upcoming exam, it might motivate you to study so that you feel more prepared. But anxiety can easily get out of hand. If you’re so anxious that you can’t concentrate on studying, the anxiety is no longer useful.</p> <br/>
+
+      <p>When anxiety gets so out of hand that it starts to interfere with your daily life, you might have an anxiety disorder. Anxiety disorders are a type of mental health condition. Some examples include:</p>
+
       <ul class="list-disc list-inside">
-        <li>Feeling or appearing low, empty inside, or irritable most of the day every day</li>
-        <li>Losing interest in activities you would normally enjoy</li>
-        <li>Changes in appetite or weight—eating more or less; gaining or losing weight</li>
-        <li>Changes in sleep—either not being able to sleep or sleeping too much</li>
-        <li>Feelings of worthlessness or guilt</li>
+        <li>Generalized anxiety disorder (GAD).</li>
+        <li>Social anxiety.</li>
+        <li>Phobias</li>
       </ul>
       </div>`,
       imageUrl:
