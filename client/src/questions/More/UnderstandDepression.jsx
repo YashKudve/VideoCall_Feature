@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 
-const T3 = () => {
+const UnderstandDepression = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to track modal open/close
   const [selectedEvent, setSelectedEvent] = useState(null); // State to track which event's "Read More" was clicked
 
@@ -32,34 +32,83 @@ const T3 = () => {
       heading: "What causes Depression?",
       subHeading:
         "Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter).",
-      description: "",
+      description: `
+      <div class="text-left">
+      <p>Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter). These biological changes can start because you have a family history of depression, or it can start after changes and stressors in your life.</p> <br/>
+      <p>Some people feel depressed but don’t understand why. Like there’s nothing to be sad about but I feel so sad and I can’t control these feelings. If you feel this way – it’s possible you have a genetic predisposition to depression, that depression might run in your family, or that you have what professionals call “clinical depression.” There’s no environmental explanation for it -but your brain is changing in a way that causes depression symptoms.</p>
+      </div>
+      `,
       imageUrl: "",
       direction: "left",
     },
     {
       number: 3,
-      heading: "Mental Health Medication",
+      heading: "Am I depressed or just sad?",
       subHeading:
-        "It would be really nice if there was one perfect medication for every mental health concern.There are many different types of medications, and they all work differently. On top of that, everybody’s brain is different.",
-      description: "",
+        "Sadness and depression are both common human emotions, but they differ in intensity, duration, and impact on daily life. It's important to recognize the signs and symptoms of each to seek appropriate support and treatment.",
+      description: `
+      <div class="text-left">
+      <p>Everyone feels sad sometimes. It’s natural when we experience moments in life that make us feel overwhelmed, upset, or even hurt. Maybe we just got out of a relationship, we miss someone, or we feel alone. Maybe we tried our hardest but didn’t succeed, or the stress of everyday life is weighing on us. </p> <br/>
+      <p>If you’re sad because you lost your job, are going through a breakup, or have lost someone in your life, this is normal. Sadness, even if it feels like extreme sadness, is a natural reaction to events like these. But regular sadness can turn into depression if the feelings don’t get better over time. Or if your mood starts to get in the way of your daily life.</p>
+      <p><strong>Sadness:</strong></p>
+      <ul class="list-disc list-inside">
+        <li>Sadness is a temporary emotional state often triggered by specific events, such as a loss, disappointment, or failure.</li>
+        <li>It is a normal part of the human experience and typically resolves on its own with time.</li>
+        <li>While sadness may affect mood and behavior, it usually does not significantly impair daily functioning.</li>
+      </ul>
+      <p><strong>Depression:</strong></p>
+      <ul class="list-disc list-inside">
+        <li>Depression is a mood disorder characterized by persistent feelings of sadness, hopelessness, and disinterest in activities once enjoyed.</li>
+        <li>It lasts for an extended period, typically two weeks or more, and can interfere with various aspects of life, including work, relationships, and self-care.</li>
+        <li>Depression often involves physical symptoms such as changes in appetite, sleep disturbances, fatigue, and body aches.</li>
+        <li>If you suspect you may be experiencing depression, it's essential to reach out to a healthcare professional for evaluation and support.</li>
+      </ul>
+      </div>
+      `,
       imageUrl: "",
       direction: "right",
     },
     {
       number: 4,
-      heading: "Mental Health self-help",
+      heading: "Types of intrusive thoughts",
       subHeading:
-        "Therapy and medication aren’t the only ways to improve your mental health.  There are lots of things that you can do on your own! Taking steps to educate yourself, learn your mind and body, and make changes over time in your life can improve your overall well-being.",
-      description: "",
+        "You’re going about your day, and suddenly you’re hit with a thought that’s bizarre, uncomfortable—even shocking. Maybe you’re talking to someone, and you suddenly picture yourself punching them in the face. These are called Intrusive Thoughts",
+      description: `
+      
+      `,
       imageUrl: "",
       direction: "left",
     },
     {
       number: 5,
-      heading: "Finding mental health support",
+      heading: "What is depression really like?",
       subHeading:
-        "When you’re worried about your mental health, it’s easy to feel alone. It might feel like no one understands what you’re going through. You might not even fully understand it yourself! Reaching out can be scary, but there’s no need to suffer through mental health struggles on your own.",
-      description: "",
+        "When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.",
+      description: `
+      <div class="text-left">
+      <p>When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.
+      <br/>
+      Here are examples of what people have said depression feels like:</p>
+      <ul class="list-disc list-inside">
+      <li>Fighting an exhausting battle against yourself </li>
+      <li>Drowning and no one sees it, and you feel helpless to the water around you</li>
+      <li>A door to an empty room with no escape </li>
+      <li>An overwhelming sense of sadness about life and about all that you are and all you do</li>
+      </ul>
+
+    <br/>
+    <p>Depression is a mood disorder—mood disorders happen when changes in our moods go beyond the normal ups and downs that we experience from day to day. Episodes of depression last at least two weeks at a time, but sometimes they can last for months or even years.<br/>
+
+    Some of the symptoms that people with depression experience include:</p>
+    <ul class="list-disc list-inside">
+    <li>Feeling or appearing low, empty inside, or irritable most of the day every day</li>
+    <li>Changes in sleep—either not being able to sleep or sleeping too much</li>
+    <li>Feelings of worthlessness or guilt</li>
+    <li>Difficulty thinking, concentrating, or making decisions</li>
+    <li>Thoughts of death or suicide</li>
+    </ul>
+      </div>
+      `,
       imageUrl: "",
       direction: "right",
     },
@@ -185,4 +234,4 @@ const Modal = ({ onClose, event }) => {
   );
 };
 
-export default T3;
+export default UnderstandDepression;

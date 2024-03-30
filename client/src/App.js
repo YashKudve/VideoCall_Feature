@@ -3,13 +3,13 @@ import "./App.css";
 import LobbyScreen from "./screens/Lobby";
 import RoomPage from "./screens/Room";
 
-import T3 from "./questions/More/T3.jsx";
+import UnderstandDepression from "./questions/More/UnderstandDepression.jsx";
 
 function App() {
   return (
     <div className="App">
     
-      <T3/>
+      <UnderstandDepression/>
     
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
