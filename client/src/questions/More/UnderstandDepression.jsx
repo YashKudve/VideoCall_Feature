@@ -166,7 +166,7 @@ const UnderstandDepression = () => {
         />
       )}
 
-      <button className="bg-green-700 text-white w-auto h-auto m-auto]">
+      <button className="bg-gradient-to-r from-green-600 to-green-800 text-white w-80 h-12 text-lg font-bold hover:bg-green-900 border rounded-2xl">
         Treatment and Recovery &#187;
       </button>
     </div>
@@ -179,7 +179,7 @@ const Circle = () => {
 
 const Pillar = () => {
   return (
-    <div className="rounded-t-full rounded-b-full w-3 h-full bg-green-700 mx-auto"></div>
+    <div className="rounded-t-full rounded-b-full w-3 h-full bg-gradient-to-b from-green-400 to-green-700 mx-auto"></div>
   );
 };
 
