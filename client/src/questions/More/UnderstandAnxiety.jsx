@@ -23,6 +23,14 @@ const UnderstandAnxiety = () => {
         <li>Social anxiety.</li>
         <li>Phobias</li>
       </ul>
+    <br/>
+    <p><strong>Symptoms of an anxiety disorder</strong></p>
+    <ul class="list-disc list-inside">
+    <li>Feeling restless and irritable.</li>
+    <li>Difficulty concentrating.</li>
+    <li>Muscle pain, tightness, or soreness</li>
+    <li>Trouble falling asleep or staying asleep</li>
+  </ul>
       </div>`,
       imageUrl:
         "https://images.unsplash.com/photo-1592806088932-05058af0ad8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVwcmVzc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
@@ -30,26 +38,24 @@ const UnderstandAnxiety = () => {
     },
     {
       number: 2,
-      heading: "What causes Depression?",
-      subHeading:
-        "Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter).",
+      heading: "How common is anxiety?",
+      subHeading: "",
       description: `
-      <div class="text-left">
-      <p>Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter). These biological changes can start because you have a family history of depression, or it can start after changes and stressors in your life.</p> <br/>
-      <p>Some people feel depressed but don’t understand why. Like there’s nothing to be sad about but I feel so sad and I can’t control these feelings. If you feel this way – it’s possible you have a genetic predisposition to depression, that depression might run in your family, or that you have what professionals call “clinical depression.” There’s no environmental explanation for it -but your brain is changing in a way that causes depression symptoms.</p>
-      </div>
+     
       `,
       imageUrl: "",
       direction: "left",
     },
     {
       number: 3,
-      heading: "Am I depressed or just sad?",
+      heading: "What causes Anxiety?",
       subHeading:
-        "Sadness and depression are both common human emotions, but they differ in intensity, duration, and impact on daily life. It's important to recognize the signs and symptoms of each to seek appropriate support and treatment.",
+        "Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety",
       description: `
       <div class="text-left">
-      <p>Everyone feels sad sometimes. It’s natural when we experience moments in life that make us feel overwhelmed, upset, or even hurt. Maybe we just got out of a relationship, we miss someone, or we feel alone. Maybe we tried our hardest but didn’t succeed, or the stress of everyday life is weighing on us. </p> <br/>
+      <p>Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety. Sometimes, anxiety develops gradually. Other times, it doesn’t appear until a stressful event triggers it. <br/>
+
+      There are many risk factors and triggers, but here are a few examples:</p> <br/>
       <p>If you’re sad because you lost your job, are going through a breakup, or have lost someone in your life, this is normal. Sadness, even if it feels like extreme sadness, is a natural reaction to events like these. But regular sadness can turn into depression if the feelings don’t get better over time. Or if your mood starts to get in the way of your daily life.</p>
       <p><strong>Sadness:</strong></p>
       <ul class="list-disc list-inside">
@@ -127,7 +133,7 @@ const UnderstandAnxiety = () => {
   return (
     <div className="flex flex-col gap-y-3 w-full my-4 z-10">
       <span className="text-3xl font-bold bg-green-700 text-white p-7 rounded-lg">
-        Understanding Depression (T3)
+        Understanding Anxiety (Pending)
       </span>
       <Circle />
       {events.map((event, key) => (
@@ -167,9 +173,11 @@ const UnderstandAnxiety = () => {
         />
       )}
 
-      <button className="bg-green-700 text-white w-auto h-auto m-auto]">
-        Treatment and Recovery &#187;
-      </button>
+      <div class="flex justify-center">
+        <button class="bg-gradient-to-r from-green-600 to-green-800 text-white w-80 h-12 text-lg font-bold hover:bg-green-900 border rounded-2xl">
+          Treatment and Recovery &#187;
+        </button>
+      </div>
     </div>
   );
 };
@@ -180,7 +188,7 @@ const Circle = () => {
 
 const Pillar = () => {
   return (
-    <div className="rounded-t-full rounded-b-full w-3 h-full bg-green-700 mx-auto"></div>
+    <div className="rounded-t-full rounded-b-full w-3 h-full bg-gradient-to-b from-green-400 to-green-700 mx-auto"></div>
   );
 };
 

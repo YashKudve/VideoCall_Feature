@@ -4,12 +4,14 @@ import LobbyScreen from "./screens/Lobby";
 import RoomPage from "./screens/Room";
 
 import UnderstandDepression from "./questions/More/UnderstandDepression.jsx";
+import UnderstandAnxiety from "./questions/More/UnderstandAnxiety.jsx";
 
 function App() {
   return (
     <div className="App">
     
-      <UnderstandDepression/>
+      {/* <UnderstandDepression/> */}
+      <UnderstandAnxiety/>
     
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
