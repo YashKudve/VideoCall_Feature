@@ -1,36 +1,33 @@
 import React, { Fragment, useState } from "react";
 
-const UnderstandAnxiety = () => {
+const UnderstandAddiction = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to track modal open/close
   const [selectedEvent, setSelectedEvent] = useState(null); // State to track which event's "Read More" was clicked
 
   const events = [
     {
       number: 1,
-      heading: "What is Anxiety?",
+      heading: "What is Addiction?",
       subHeading:
-        "Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else.",
+        "Addiction is a complex condition characterized by compulsive drug or substance use, despite harmful consequences. It typically involves a strong and often uncontrollable urge to consume substances or engage in behaviors, even when they are detrimental to one's physical health, mental well-being, relationships, and overall functioning.",
       description: `
-      <div class="text-left">
-      <p>Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else. Anxiety can also affect your appetite and make it hard to sleep.</p> <br/>
+      <div class="text-left text-lg">
+      <strong>Addiction is a medical condition</strong>
+      <p>Sometimes people talk about addiction in a way that makes it seem like a moral failure—like people who struggle with addiction are “selfish” or “bad.” But addiction is actually a disorder of the brain. Addiction “hijacks” the reward pathways of your brain, making it physically more difficult to make healthy choices about your substance use. This means that addiction is a medical condition, just like heart disease or diabetes. It’s also a type of mental illness. </p>
 
-      <p>A little anxiety can be useful. For example, if you’re anxious about an upcoming exam, it might motivate you to study so that you feel more prepared. But anxiety can easily get out of hand. If you’re so anxious that you can’t concentrate on studying, the anxiety is no longer useful.</p> <br/>
-
-      <p>When anxiety gets so out of hand that it starts to interfere with your daily life, you might have an anxiety disorder. Anxiety disorders are a type of mental health condition. Some examples include:</p>
-
-      <ul class="list-disc list-inside">
-        <li>Generalized anxiety disorder (GAD).</li>
-        <li>Social anxiety.</li>
-        <li>Phobias</li>
-      </ul>
     <br/>
-    <p><strong>Symptoms of an anxiety disorder</strong></p>
+    <strong>Key Signs to recognize addiction</strong>
     <ul class="list-disc list-inside">
-    <li>Feeling restless and irritable.</li>
-    <li>Difficulty concentrating.</li>
-    <li>Muscle pain, tightness, or soreness</li>
-    <li>Trouble falling asleep or staying asleep</li>
-  </ul>
+    <li>You can’t stop using drugs or alcohol.</li>
+    <li>You experience intense cravings.</li>
+    <li>You have trouble managing your emotions.</li>
+    <li>Your drug or alcohol use interferes with your daily life or your relationships.</li>
+    <li>You have less and less awareness of the negative consequences.</li>
+    </ul>
+    <br/>
+
+    <strong>Is it just drugs and alcohol?</strong>
+    <p>The current definitions of “addiction” generally refer only to drugs and alcohol. But more and more mental health professionals are recognizing that anything that stimulates the reward pathways in the brain can be addictive. These “behavioral addictions” might include sex, gambling, food, and even spending too much time on the Internet. Whatever the behavior, the pattern is the same: you can’t seem to stop on your own, the behavior interferes with your life and relationships, and you lose your awareness of the negative consequences.</p>
       </div>`,
       imageUrl:
         "https://images.unsplash.com/photo-1592806088932-05058af0ad8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVwcmVzc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
@@ -145,7 +142,7 @@ const UnderstandAnxiety = () => {
   return (
     <div className="flex flex-col gap-y-3 w-full my-4 z-10">
       <span className="text-3xl font-bold bg-green-700 text-white p-7 rounded-lg">
-        Understanding Anxiety (Pending)
+        Understanding Addiction
       </span>
       <Circle />
       {events.map((event, key) => (
@@ -255,4 +252,4 @@ const Modal = ({ onClose, event }) => {
   );
 };
 
-export default UnderstandAnxiety;
+export default UnderstandAddiction;
