@@ -56,20 +56,21 @@ const UnderstandAnxiety = () => {
       <p>Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety. Sometimes, anxiety develops gradually. Other times, it doesn’t appear until a stressful event triggers it. <br/>
 
       There are many risk factors and triggers, but here are a few examples:</p> <br/>
-      <p>If you’re sad because you lost your job, are going through a breakup, or have lost someone in your life, this is normal. Sadness, even if it feels like extreme sadness, is a natural reaction to events like these. But regular sadness can turn into depression if the feelings don’t get better over time. Or if your mood starts to get in the way of your daily life.</p>
-      <p><strong>Sadness:</strong></p>
+      
       <ul class="list-disc list-inside">
-        <li>Sadness is a temporary emotional state often triggered by specific events, such as a loss, disappointment, or failure.</li>
-        <li>It is a normal part of the human experience and typically resolves on its own with time.</li>
-        <li>While sadness may affect mood and behavior, it usually does not significantly impair daily functioning.</li>
+        <li><strong>Environment:</strong> Living in a stressful environment makes anxiety more likely. Things like living in poverty or having an abusive family put a lot of stress on your brain. They can make you feel like the world is an unsafe place.</li>
+
+        <li><strong>Social life:</strong> Feeling embarrassed or unsure of yourself in social situations can lead to social anxiety. Being isolated can also lead to anxiety, because as humans we depend on other people to get our needs met.</li>
+
+        <li><strong>Stressful events:</strong> Experiencing something traumatic (like falling off a ledge) can lead to fear and anxiety around that experience (like a fear of heights).</li>
+
+        <li><strong>Childhood trauma:</strong>  Even if you’re no longer in a stressful environment, things that happened to you as a child can have an impact later in life. Anxiety can be one symptom of complex PTSD.</li>
+
+        <li><strong>Unhealthy habits:</strong> like not getting enough sleep, or not eating. Your brain needs sleep, nutrients, and healthy habits to function properly.</li>
+
+        <li><strong>Drugs and Alcohol: </strong>Abusing drugs and alcohol can trigger anxiety—especially stimulants like tobacco and cocaine, which make your brain more sensitive to stressful events. People often use drugs and alcohol to cope with anxiety, but in the long run they make it harder to recover from anxiety.</li>
       </ul>
-      <p><strong>Depression:</strong></p>
-      <ul class="list-disc list-inside">
-        <li>Depression is a mood disorder characterized by persistent feelings of sadness, hopelessness, and disinterest in activities once enjoyed.</li>
-        <li>It lasts for an extended period, typically two weeks or more, and can interfere with various aspects of life, including work, relationships, and self-care.</li>
-        <li>Depression often involves physical symptoms such as changes in appetite, sleep disturbances, fatigue, and body aches.</li>
-        <li>If you suspect you may be experiencing depression, it's essential to reach out to a healthcare professional for evaluation and support.</li>
-      </ul>
+      
       </div>
       `,
       imageUrl: "",
@@ -77,10 +78,19 @@ const UnderstandAnxiety = () => {
     },
     {
       number: 4,
-      heading: "Types of intrusive thoughts",
+      heading: "What’s the difference between anxiety and being stressed?",
       subHeading:
-        "You’re going about your day, and suddenly you’re hit with a thought that’s bizarre, uncomfortable—even shocking. Maybe you’re talking to someone, and you suddenly picture yourself punching them in the face. These are called Intrusive Thoughts",
+        "The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing.",
       description: `
+      <div class="text-left">
+      <p>The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing. In both cases, your body is releasing hormones to trigger these symptoms. <br/>
+
+      Stress is a normal, proportional reaction to a stressful situation or external pressures. It’s normal to feel stressed about a final exam or job interview. <br/>
+      
+      When we talk about anxiety as in anxiety disorders, anxiety is a condition characterized by feelings of apprehension or unexplained thoughts of impending doom. <br/>
+      
+      Another way to tell the difference between stress and an anxiety disorder is noticing how long your feelings of stress last. When stress lingers for days or weeks and prevents you from carrying out day-to-day activities, then you may be experiencing anxiety. You could be avoiding certain places or situations in fear of what might happen. You may even feel anxious about the fact that you’re anxious. If you are having these concerns, you are not alone. Anxiety disorders are common and manageable.</p>
+      </div>
       
       `,
       imageUrl: "",
@@ -88,31 +98,33 @@ const UnderstandAnxiety = () => {
     },
     {
       number: 5,
-      heading: "What is depression really like?",
+      heading: "What is trauma?",
       subHeading:
-        "When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.",
+        "Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic.",
       description: `
       <div class="text-left">
-      <p>When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.
-      <br/>
-      Here are examples of what people have said depression feels like:</p>
+      <p>Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic. Trauma is different for everyone—what seems normal to someone else might be traumatic for you. <br/> <br/>
+
+      A traumatic experience can be a threat to your physical safety, like a car accident. It could be something more emotional or social. Trauma can be a one-time event, like a violent attack. Or it can be ongoing, like childhood neglect. Things like abuse, natural disasters, sudden death, bullying, poverty, and discrimination can all induce a trauma response.</p>
+      <br/><br/>
+      <strong>Common Emotional Symptoms</strong>
       <ul class="list-disc list-inside">
-      <li>Fighting an exhausting battle against yourself </li>
-      <li>Drowning and no one sees it, and you feel helpless to the water around you</li>
-      <li>A door to an empty room with no escape </li>
-      <li>An overwhelming sense of sadness about life and about all that you are and all you do</li>
+      <li>Fear, anxiety </li>
+      <li>Shock, disbelief</li>
+      <li>Sadness, hopelessness </li>
+      <li>Feeling disconnected or numb.</li>
+      <li>Confusion, difficulty focusing</li>
       </ul>
 
-    <br/>
-    <p>Depression is a mood disorder—mood disorders happen when changes in our moods go beyond the normal ups and downs that we experience from day to day. Episodes of depression last at least two weeks at a time, but sometimes they can last for months or even years.<br/>
-
-    Some of the symptoms that people with depression experience include:</p>
+    <br/> <br/>
+    <strong>Common Physical Symptoms</strong>
     <ul class="list-disc list-inside">
-    <li>Feeling or appearing low, empty inside, or irritable most of the day every day</li>
-    <li>Changes in sleep—either not being able to sleep or sleeping too much</li>
-    <li>Feelings of worthlessness or guilt</li>
-    <li>Difficulty thinking, concentrating, or making decisions</li>
-    <li>Thoughts of death or suicide</li>
+    <li>Trouble sleeping, nightmares</li>
+    <li>Fatigue, exhaustion</li>
+    <li>Racing heart, fast breathing</li>
+    <li>Feeling on edge</li>
+    <li>Body aches/pains, muscle tension</li>
+    
     </ul>
       </div>
       `,
