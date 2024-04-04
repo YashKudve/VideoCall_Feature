@@ -35,38 +35,57 @@ const UnderstandAddiction = () => {
     },
     {
       number: 2,
-      heading: "How common is anxiety?",
-      subHeading: "",
+      heading: "Can you be addicted to a behavior?",
+      subHeading:
+        "Traditionally, the term “addiction” has been applied to people whose drug or alcohol use has become a serious problem. But today, many mental health specialists agree that behaviors can be addictive, too",
       description: `
+     <div class="text-left text-lg">
+     <p>Traditionally, the term “addiction” has been applied to people whose drug or alcohol use has become a serious problem. But today, many mental health specialists agree that behaviors can be addictive, too. Treatments have been developed for sex addiction, gambling addiction, food addiction, and many others.</p>
+     <br/>
+     <p>People also throw the word “addiction” around a lot in everyday conversation: “I’m so addicted to chocolate!” It can make it hard to understand where to draw the line between being addicted to something and just doing it a lot. Especially since most of these behaviors are fine in moderation—some are even healthy (like sex) or even necessary (like food)! So how can you tell when your behavior is becoming a problem?</p> <br/>
+     <strong>Key Signs to recognize addiction</strong>
+     <ul class="list-disc list-inside">
+     <li>You can’t stop using drugs or alcohol.</li>
+     <li>You experience intense cravings.</li>
+     <li>You have trouble managing your emotions.</li>
+     <li>Your drug or alcohol use interferes with your daily life or your relationships.</li>
+     <li>You have less and less awareness of the negative consequences.</li>
+     </ul>
+     <br/>
+
+     <strong>What kind of things can be addictive?</strong> <br/>
+     <p>Addiction is a mental illness that involves the reward pathways of your brain. [2] Anything that activates these reward pathways can become addictive. Some things, like sex and gambling, are more likely to do this than others. But really, pretty much anything that feels good can become addictive. It depends less on the behavior itself, and more on how that behavior makes you feel.</p>
      
+     </div>
       `,
       imageUrl: "",
       direction: "left",
     },
     {
       number: 3,
-      heading: "What causes Anxiety?",
+      heading: "If I drink a lot, does that make me an alcoholic?",
       subHeading:
-        "Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety",
+        "No one understands your body and your experiences better than you. What drinking “a lot” looks like to you may not be the same for someone else and vice versa. Instead of thinking about if you’re drinking a lot—think about whether or not you have control over your drinking and how much drinking causes problems in your life.",
       description: `
-      <div class="text-left">
-      <p>Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety. Sometimes, anxiety develops gradually. Other times, it doesn’t appear until a stressful event triggers it. <br/>
+      <div class="text-left text-lg">
+      <p>No one understands your body and your experiences better than you. What drinking “a lot” looks like to you may not be the same for someone else and vice versa. Instead of thinking about if you’re drinking a lot—think about whether or not you have control over your drinking and how much drinking causes problems in your life.</p> <br/>
+      <p>Determining whether you have a problem with alcohol is a deeply personal experience that requires self-reflection, self-love, and acceptance. There are also factors to take into consideration like when and why you drink.</p> <br/>
 
-      There are many risk factors and triggers, but here are a few examples:</p> <br/>
-      
+      <strong>How much is "a lot"?</strong>
       <ul class="list-disc list-inside">
-        <li><strong>Environment:</strong> Living in a stressful environment makes anxiety more likely. Things like living in poverty or having an abusive family put a lot of stress on your brain. They can make you feel like the world is an unsafe place.</li>
-
-        <li><strong>Social life:</strong> Feeling embarrassed or unsure of yourself in social situations can lead to social anxiety. Being isolated can also lead to anxiety, because as humans we depend on other people to get our needs met.</li>
-
-        <li><strong>Stressful events:</strong> Experiencing something traumatic (like falling off a ledge) can lead to fear and anxiety around that experience (like a fear of heights).</li>
-
-        <li><strong>Childhood trauma:</strong>  Even if you’re no longer in a stressful environment, things that happened to you as a child can have an impact later in life. Anxiety can be one symptom of complex PTSD.</li>
-
-        <li><strong>Unhealthy habits:</strong> like not getting enough sleep, or not eating. Your brain needs sleep, nutrients, and healthy habits to function properly.</li>
-
-        <li><strong>Drugs and Alcohol: </strong>Abusing drugs and alcohol can trigger anxiety—especially stimulants like tobacco and cocaine, which make your brain more sensitive to stressful events. People often use drugs and alcohol to cope with anxiety, but in the long run they make it harder to recover from anxiety.</li>
+      <li>Moderate drinking is up to one drink per day for women or up to two drinks per day for men.</li>
+      <li>Anything more than 4 drinks in a single day for women, or 5 drinks in a day for men, is considered “high-risk” drinking. If you drink that much in the space of 2 hours, that’s considered binge drinking.</li>
+      <li> Keep in mind that a “drink” refers to a can of beer, a glass of wine, or a shot of liquor.</li>
+      <li>Many cocktails contain 2 or 3 shots. For example, a single Long Island Iced Tea can count as 4-5 drinks!</li>
       </ul>
+      <br/>
+
+      <strong>Should I cut back?</strong>
+      <p>Trying to cut back and seeing whether or not you’re able to is a good way of finding out if you have a problem. Whether or not to quit drinking entirely is a question that only you can answer.
+
+      Think about the pros and cons of your drinking. Drinking might make it easier to socialize with new people and deal with stress. But it also may lead to conflict with others, making poor decisions, long-term health problems— or keeps you from being “present” with those you care about.</p>
+
+      
       
       </div>
       `,
@@ -75,18 +94,24 @@ const UnderstandAddiction = () => {
     },
     {
       number: 4,
-      heading: "What’s the difference between anxiety and being stressed?",
+      heading: "Treating Internet Addiction",
       subHeading:
-        "The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing.",
+        "The Internet is a wild and wonderful place which has forever changed the way we live, learn, and work – but when a person can’t find a balance between their time online and their time offline, it can mean problems for their mental health.",
       description: `
-      <div class="text-left">
-      <p>The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing. In both cases, your body is releasing hormones to trigger these symptoms. <br/>
+      <div class="text-left text-lg">
+      <p>The Internet is a wild and wonderful place which has forever changed the way we live, learn, and work – but when a person can’t find a balance between their time online and their time offline, it can mean problems for their mental health.
+<br/>
+      For some people, going online becomes an addiction.
+      <br/>
+      First, you need to know that there is no one definition for internet addiction.  However, it is generally agreed that people who are addicted to the Internet have trouble filling personal and professional obligations because of their online activities, and that their use of the Internet causes strain on relationships with family and friends. People who are addicted to the Internet also often experience negative emotions or withdrawal symptoms when their Internet access is restricted.</p> <br/>
 
-      Stress is a normal, proportional reaction to a stressful situation or external pressures. It’s normal to feel stressed about a final exam or job interview. <br/>
-      
-      When we talk about anxiety as in anxiety disorders, anxiety is a condition characterized by feelings of apprehension or unexplained thoughts of impending doom. <br/>
-      
-      Another way to tell the difference between stress and an anxiety disorder is noticing how long your feelings of stress last. When stress lingers for days or weeks and prevents you from carrying out day-to-day activities, then you may be experiencing anxiety. You could be avoiding certain places or situations in fear of what might happen. You may even feel anxious about the fact that you’re anxious. If you are having these concerns, you are not alone. Anxiety disorders are common and manageable.</p>
+      <strong>Internet addiction can be treated in the following ways:</strong>
+      <ul class="list-disc list-inside">
+      <li>Talk therapy is almost always incorporated into the treatment of Internet addiction. Cognitive-behavioral therapy (CBT) and group therapy are common.</li>
+      <li>Medication may be used to help manage symptoms of underlying mental illness and control intrusive thoughts about going online.</li>
+      <li>Exercise may be incorporated into Internet addiction treatment to ease the effects of reduced dopamine in the brain resulting from restricted Internet use.</li>
+      <li>Internet addiction treatment aims to create boundaries and balance around Internet use rather than eliminating it entirely. However, if there is a certain app, game, or site that seems to be the focus of the addiction, stopping its use may be part of treatment.</li>
+      </ul>
       </div>
       
       `,
@@ -96,33 +121,10 @@ const UnderstandAddiction = () => {
     {
       number: 5,
       heading: "What is trauma?",
-      subHeading:
-        "Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic.",
+      subHeading: "",
       description: `
-      <div class="text-left">
-      <p>Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic. Trauma is different for everyone—what seems normal to someone else might be traumatic for you. <br/> <br/>
-
-      A traumatic experience can be a threat to your physical safety, like a car accident. It could be something more emotional or social. Trauma can be a one-time event, like a violent attack. Or it can be ongoing, like childhood neglect. Things like abuse, natural disasters, sudden death, bullying, poverty, and discrimination can all induce a trauma response.</p>
-      <br/><br/>
-      <strong>Common Emotional Symptoms</strong>
-      <ul class="list-disc list-inside">
-      <li>Fear, anxiety </li>
-      <li>Shock, disbelief</li>
-      <li>Sadness, hopelessness </li>
-      <li>Feeling disconnected or numb.</li>
-      <li>Confusion, difficulty focusing</li>
-      </ul>
-
-    <br/> <br/>
-    <strong>Common Physical Symptoms</strong>
-    <ul class="list-disc list-inside">
-    <li>Trouble sleeping, nightmares</li>
-    <li>Fatigue, exhaustion</li>
-    <li>Racing heart, fast breathing</li>
-    <li>Feeling on edge</li>
-    <li>Body aches/pains, muscle tension</li>
-    
-    </ul>
+      <div class="text-left text-lg">
+      
       </div>
       `,
       imageUrl: "",

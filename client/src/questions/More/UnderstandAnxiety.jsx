@@ -11,7 +11,7 @@ const UnderstandAnxiety = () => {
       subHeading:
         "Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Anxiety is an emotion that you feel when you’re worried about something. Your body tenses up, and your mind becomes fixated on the thing you’re worried about. It can be hard to concentrate on anything else. Anxiety can also affect your appetite and make it hard to sleep.</p> <br/>
 
       <p>A little anxiety can be useful. For example, if you’re anxious about an upcoming exam, it might motivate you to study so that you feel more prepared. But anxiety can easily get out of hand. If you’re so anxious that you can’t concentrate on studying, the anxiety is no longer useful.</p> <br/>
@@ -52,7 +52,7 @@ const UnderstandAnxiety = () => {
       subHeading:
         "Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Like other mental health conditions, anxiety disorders don’t have one single cause. Instead they have a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop anxiety. Sometimes, anxiety develops gradually. Other times, it doesn’t appear until a stressful event triggers it. <br/>
 
       There are many risk factors and triggers, but here are a few examples:</p> <br/>
@@ -82,7 +82,7 @@ const UnderstandAnxiety = () => {
       subHeading:
         "The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>The words stress and anxiety are sometimes used interchangeably. So how can you tell the difference between common stress and an anxiety disorder? Both share many of the same physical symptoms, such as increased heart rate, muscle tension, or rapid breathing. In both cases, your body is releasing hormones to trigger these symptoms. <br/>
 
       Stress is a normal, proportional reaction to a stressful situation or external pressures. It’s normal to feel stressed about a final exam or job interview. <br/>
@@ -102,7 +102,7 @@ const UnderstandAnxiety = () => {
       subHeading:
         "Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Sometimes when we see or experience something really scary, shocking, or harmful, the effects can stay with us for a long time after. If this is a familiar experience for you, you may be dealing with trauma. Anything that is highly stressful to you can be traumatic. Trauma is different for everyone—what seems normal to someone else might be traumatic for you. <br/> <br/>
 
       A traumatic experience can be a threat to your physical safety, like a car accident. It could be something more emotional or social. Trauma can be a one-time event, like a violent attack. Or it can be ongoing, like childhood neglect. Things like abuse, natural disasters, sudden death, bullying, poverty, and discrimination can all induce a trauma response.</p>

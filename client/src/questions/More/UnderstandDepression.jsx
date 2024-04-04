@@ -11,7 +11,7 @@ const UnderstandDepression = () => {
       subHeading:
         "Feeling sad is a normal human experience, but feeling too much sadness can cause distress and life problems. When too much sadness affects your life, you might have depression.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Feeling sad is a normal human experience, but feeling too much sadness can cause distress and life problems. When too much sadness affects your life, you might have depression.</p>
       <p>Depression is a type of mental health condition called a mood disorder. Mood disorders occur when changes in mood go beyond the normal ups and downs we all experience from day to day. Episodes of depression last at least two weeks at a time, but sometimes they can last for months or even years.</p>
       <p>Depression goes way beyond just feeling sad. Some of the symptoms that people with depression experience include:</p>
@@ -33,7 +33,7 @@ const UnderstandDepression = () => {
       subHeading:
         "Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter).",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Depression is a mental health problem that comes from changes in your brain. The changes relate to how your brain produces and absorbs neurotransmitters, how it’s circuits work, inflammation, and even how it’s built (grey matter). These biological changes can start because you have a family history of depression, or it can start after changes and stressors in your life.</p> <br/>
       <p>Some people feel depressed but don’t understand why. Like there’s nothing to be sad about but I feel so sad and I can’t control these feelings. If you feel this way – it’s possible you have a genetic predisposition to depression, that depression might run in your family, or that you have what professionals call “clinical depression.” There’s no environmental explanation for it -but your brain is changing in a way that causes depression symptoms.</p>
       </div>
@@ -47,7 +47,7 @@ const UnderstandDepression = () => {
       subHeading:
         "Sadness and depression are both common human emotions, but they differ in intensity, duration, and impact on daily life. It's important to recognize the signs and symptoms of each to seek appropriate support and treatment.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>Everyone feels sad sometimes. It’s natural when we experience moments in life that make us feel overwhelmed, upset, or even hurt. Maybe we just got out of a relationship, we miss someone, or we feel alone. Maybe we tried our hardest but didn’t succeed, or the stress of everyday life is weighing on us. </p> <br/>
       <p>If you’re sad because you lost your job, are going through a breakup, or have lost someone in your life, this is normal. Sadness, even if it feels like extreme sadness, is a natural reaction to events like these. But regular sadness can turn into depression if the feelings don’t get better over time. Or if your mood starts to get in the way of your daily life.</p>
       <p><strong>Sadness:</strong></p>
@@ -85,7 +85,7 @@ const UnderstandDepression = () => {
       subHeading:
         "When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.",
       description: `
-      <div class="text-left">
+      <div class="text-left text-lg">
       <p>When people think about depression, people may think of being sad. But for many people, depression isn’t sadness. Sometimes it feels like anger, exhaustion, hopelessness, worthlessness, or feeling like they will never be happy again.
       <br/>
       Here are examples of what people have said depression feels like:</p>
