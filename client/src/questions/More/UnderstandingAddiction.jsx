@@ -120,11 +120,28 @@ const UnderstandAddiction = () => {
     },
     {
       number: 5,
-      heading: "What is trauma?",
-      subHeading: "",
+      heading: "Why can’t I stop using drugs or alcohol?",
+      subHeading:
+        "The truth is that stopping is difficult. While using drugs or alcohol might begin as a choice, addiction is not—it is a condition that takes a lot of time to overcome, heal, and recover from. It takes some people many times to quit for good, but they do it. And you can do it too.",
       description: `
       <div class="text-left text-lg">
-      
+      <p>The truth is that stopping is difficult. While using drugs or alcohol might begin as a choice, addiction is not—it is a condition that takes a lot of time to overcome, heal, and recover from. It takes some people many times to quit for good, but they do it. And you can do it too.</p>
+
+<strong>Why can’t I stop?</strong>
+<p>Things like our minds and bodies, friends, trauma, and our environments may all play a role in why it’s hard to stop using.Using may be a habit that’s been developed over time to help numb the pain or feelings we’re experiencing when we don’t want to feel them. If we’ve lived through trauma, abuse, or neglect, drugs or alcohol may be the thing that helps us cope with these experiences. And we may not be ready to address the hurt.</p>
+<h3>Our Brains</h3>
+<p>Biology also impacts addiction because we self-medicate through addictions.  We use a substance because it feels good and does something for our brains. Your drug of choice is often connected to what you want to feel—happy, relaxed, numb, energized, etc.</p>
+
+<h3>Peer pressure from friends and family</h3>
+<p>Peer pressure is when our peers—or people who are around our age or who have similar experiences to our own—influence our thoughts, actions, and behaviors. Good peer pressure is supportive and positive. It can help you discover and develop new skills, interests, and hobbies. Good pressure can also help you create a positive support system of people who encourage and help you when you’re trying to stop using drugs or alcohol. While bad peer pressure is negative. It can make you feel pressured to do things that you wouldn’t want to normally do or that are uncomfortable for you.</p>
+<strong>What can I do to stop?</strong>
+      <ul class="list-disc list-inside">
+      <li>Think about the pros and cons.</li>
+      <li>Be attentive to triggers and stress.</li>
+      <li>Replace the habit.</li>
+      <li>Talk to someone.</li>
+      <li>Place yourself in a healthier environment.</li>
+      </ul>
       </div>
       `,
       imageUrl: "",
