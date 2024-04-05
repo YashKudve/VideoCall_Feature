@@ -50,12 +50,18 @@ const UnderstandED = () => {
     },
     {
       number: 3,
-      heading: "",
-      subHeading: "",
+      heading: "Can you have an eating disorder if you aren’t skinny?",
+      subHeading:
+        "YES, most of the images we’re exposed to about eating disorders show very underweight women, but looking at someone is not a good way to determine if they have an eating disorder.",
       description: `
       <div class="text-left text-lg">
+      <p>Most of the images we’re exposed to about eating disorders show very underweight women, but looking at someone is not a good way to determine if they have an eating disorder.<br/>
+
+      Restricting food intake, laxative and diet pill abuse, compulsive exercise, binge eating, and other obsessive and compulsive behaviors around food and exercise don’t necessarily make someone underweight. People with eating disorders can be underweight, can be overweight, and anywhere between. <br/>
       
+      Regardless what someone may weigh, eating disorder behaviors can have serious—sometimes fatal—health consequences. They can also destroy your relationships, work, education, and quality of life. <br/>
       
+      If your relationship with food, exercise, and your body are getting in the way of your ability to function, is taking up an exorbitant amount of your time and energy, and causing or putting you at risk for health problems, you deserve to feel better. There is no weight you must reach for your struggle to be valid or for you to be allowed to express how you’re feeling.</p>
       
       </div>
       `,
@@ -64,11 +70,21 @@ const UnderstandED = () => {
     },
     {
       number: 4,
-      heading: "",
-      subHeading: "",
+      heading: "Why is it so hard to recover from an eating disorder?",
+      subHeading:
+        "We live in a culture of juice cleanses, trendy gyms, and Instagram models. An eating disorder fills your head with noise and rules, and society reinforces it. Whether it’s restricting food, purging, overexercising or overeating, it often feels like an uphill battle, but it is possible to recover from an eating disorder and start living again.",
       description: `
       <div class="text-left text-lg">
-      
+      <p>We live in a culture of juice cleanses, trendy gyms, and Instagram models. An eating disorder fills your head with noise and rules, and society reinforces it. Whether it’s restricting food, purging, overexercising or overeating, it often feels like an uphill battle, but it is possible to recover from an eating disorder and start living again.</p>
+      <strong>Eating disorders are one of the noisiest mental illnesses.</strong><br/>
+
+When both your mind and body are compromised by such a debilitating illness, it can threaten your life. A major component for people who live with substance use disorders is to avoid the substance that fuels their addiction. For people who live with an eating disorder, your body needs food to live, and you cannot avoid eating to aid in your recovery. It’s an ongoing battle that you’re faced with multiple times a day. <br/>
+
+<strong>People may not notice that you are struggling early on—or ever.</strong><br/>
+
+Eating disordered thoughts often take control slowly and you may not realize what is happening until you are seriously struggling physically, emotionally, and psychologically.
+
+For people with restrictive food behaviors or who exercise compulsively, the people closest to them might assume that if they are eating healthier or exercising more that they are making healthy choices. 
       </div>
       
       `,
@@ -77,11 +93,21 @@ const UnderstandED = () => {
     },
     {
       number: 5,
-      heading: "",
-      subHeading: "",
+      heading: "I can’t stop stress eating!",
+      subHeading:
+        "Stress eating, also called emotional eating—or just “eating your feelings”—is pretty much what it sounds like: eating because you’re stressed, not because you’re hungry. You probably already know that overeating can be a health risk, and that’s not helping—so what can you do now?",
       description: `
       <div class="text-left text-lg">
-      
+      <p>Stress eating, also called emotional eating—or just “eating your feelings”—is pretty much what it sounds like: eating because you’re stressed, not because you’re hungry. You probably already know that overeating can be a health risk, and that’s not helping—so what can you do now?</p>
+
+    <br/>
+   <strong> Managing your stress level</strong> <br/>
+If you’re eating because of stress, then managing your stress will naturally help you manage your eating. Techniques you use to manage stress are called coping skills. Stress eating is one example of a coping skill; we do it because it makes us feel better in the moment.
+
+Coping skills can be healthy or unhealthy. Usually what makes them unhealthy is when we rely on a single coping skill too much. For example, most people can drink a beer now and then to relax, but if that’s your go-to every time you’re stressed, it will likely become a problem for you. <br/>
+
+<strong>Your relationship with food</strong><br/>
+Food is something we need to survive. It provides nutrients that keep us alive and healthy. It reminds us of home and makes us feel safe… and of course, it tastes good. There’s nothing wrong with any of that; food should be something we enjoy, not something we feel guilty about.
       </div>
       `,
       imageUrl: "",
@@ -162,7 +188,7 @@ const Pillar = () => {
 
 const EventCard = ({ number, heading, subHeading, onClick }) => {
   return (
-    <div className="flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
+    <div className="flex flex-col gap-y-2 border shadow-lg rounded-xl p-4">
       <div className="bg-red-800 text-white rounded-full w-10 h-10">
         {number}
       </div>
@@ -182,7 +208,7 @@ const Modal = ({ onClose, event }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80 m-auto transition-opacity delay-1000">
       <div className="bg-white p-4 rounded-3xl transform transition-transform delay-1000 m-10">
-        <h2 className="text-xl font-bold">{event.heading}</h2>
+        <h2 className="text-xl font-bold text-blue-800">{event.heading}</h2>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <h3 className="text-lg font-bold"></h3>

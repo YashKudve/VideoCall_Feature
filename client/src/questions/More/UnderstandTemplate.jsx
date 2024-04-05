@@ -143,7 +143,7 @@ const Pillar = () => {
 
 const EventCard = ({ number, heading, subHeading, onClick }) => {
   return (
-    <div className="flex flex-col gap-y-2 border shadow-md rounded-xl p-4">
+    <div className="flex flex-col gap-y-2 border shadow-lg rounded-xl p-4">
       <div className="bg-red-800 text-white rounded-full w-10 h-10">
         {number}
       </div>
@@ -163,7 +163,7 @@ const Modal = ({ onClose, event }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80 m-auto transition-opacity delay-1000">
       <div className="bg-white p-4 rounded-3xl transform transition-transform delay-1000 m-10">
-        <h2 className="text-xl font-bold">{event.heading}</h2>
+        <h2 className="text-xl font-bold text-blue-800">{event.heading}</h2>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <h3 className="text-lg font-bold"></h3>
