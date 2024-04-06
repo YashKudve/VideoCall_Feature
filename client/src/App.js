@@ -9,6 +9,7 @@ import UnderstandAddiction from "./questions/More/UnderstandingAddiction.jsx";
 import UnderstandED from "./questions/More/UnderstandED.jsx";
 import UnderstandADHD from "./questions/More/UnderstandADHD.jsx";
 import PrescriptionUpload from "./questions/More/PrescriptionUpload.jsx";
+import UnderstandBipolar from "./questions/More/UnderstandBipolar.jsx";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <UnderstandAddiction/> */}
       {/* <UnderstandED/> */}
       {/* <UnderstandADHD/> */}
-      <PrescriptionUpload/>
+      {/* <PrescriptionUpload/> */}
+      <UnderstandBipolar/>
     
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
