@@ -46,13 +46,13 @@ const UnderstandBipolar = () => {
       description: `
      <div class="text-left text-lg">
      <p>We all have ups and downs, but those with bipolar disorder experience them at extremes, for extended periods of time. These irregular shifts in mood are characterized by periods of mania and depression. There are four main types of bipolar disorder. The main differences are in the intensity of the manic and depressive episodes. In between these episodes, people with bipolar disorder usually feel “normal.”</p>
-     <strong>Bipolar I</strong>
+     <strong>Bipolar I :</strong>
      <p>People with bipolar I have had at least one manic episode in their lives. Most people with bipolar I also experience depression. There is generally a pattern of cycling between mania and depression, which is where the term “manic depressive” comes from.</p>
-     <strong>Bipolar II</strong>
+     <strong>Bipolar II :</strong>
      <p>People diagnosed with bipolar II have had one or more major depressive episodes and at least one episode of hypomania. Hypomania is a less severe type of mania, with highs that do not quite reach “full” mania.</p>
-     <strong>Cyclothymia</strong>
+     <strong>Cyclothymia :</strong>
      <p>Cyclothymia is similar to bipolar disorder, but less severe. The low and high mood swings never quite reach the intensity or duration of manic or depressive episodes. People with cyclothymia cycle between hypomania and mild depression for at least two years. While mild, the symptoms of cyclothymia may still interfere with daily life and relationships.</p>
-     <strong>Not otherwise specified (NOS)</strong>
+     <strong>Not otherwise specified (NOS) :</strong>
      <p>Those who experience symptoms of depression, mania, and hypomania but do not fit the criteria for bipolar I, bipolar II, or cyclothymia may be diagnosed as bipolar disorder NOS.</p>
 
      </div>
@@ -62,12 +62,16 @@ const UnderstandBipolar = () => {
     },
     {
       number: 3,
-      heading: "",
-      subHeading: "",
+      heading: "Am I bipolar or just moody?",
+      subHeading:
+        "A lot of the time when people say someone is “bipolar,” they really mean “moody.” Moody people can be happy one minute and sad the next. Sometimes they just change their mind a lot.",
       description: `
       <div class="text-left text-lg">
-      
-      
+      <P>A lot of the time when people say someone is “bipolar,” they really mean “moody.” Moody people can be happy one minute and sad the next. Sometimes they just change their mind a lot. It’s normal to experience ups and downs, especially if something has happened to make you feel happy or sad. Some people are more moody than others, or just more open about their feelings—and that’s okay. But if your mood swings start to get in the way of your daily life, you might wonder if you actually have bipolar disorder.</P>      
+      <br/>
+      <p>People with bipolar disorder have alternating episodes of mania and depression. Mania is a period of extreme high energy or mood. People often feel very excited during a manic episode and make impulsive decisions. Depression is pretty much the opposite—low energy, with feelings of sadness or despair. Stress can trigger one of these episodes, but often the shift happens without any clear explanation.</p>
+      <br/>
+      <p>Manic and depressive episodes typically last several weeks. If your moods are changing drastically from day to day, that’s usually not a sign of bipolar disorder. (But it is possible to have bipolar disorder and be moody.)</p>
       
       </div>
       `,
@@ -76,28 +80,28 @@ const UnderstandBipolar = () => {
     },
     {
       number: 4,
-      heading: "",
-      subHeading: "",
+      heading: "What causes bipolar disorder?",
+      subHeading:
+        "Like other mental illnesses, bipolar disorder doesn’t have a single cause. Instead it has a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop bipolar disorder.",
       description: `
       <div class="text-left text-lg">
-      
+      <p>Like other mental illnesses, bipolar disorder doesn’t have a single cause. Instead it has a variety of causes, called risk factors. The more risk factors you have, the more likely you are to develop bipolar disorder.<br/>
+
+      There are many risk factors for bipolar disorder, but here are a few examples:</p>
+      <ul class="list-disc list-inside">
+      <li><strong>Genetics. Bipolar disorder often runs in the family.</li>
+      <li><strong>Environment.</strong> Living in a stressful environment can make you more likely to develop bipolar disorder. Things like living in poverty or having an abusive family put a lot of stress on your brain and often trigger mania or depression.</li>
+      <li><strong>Childhood trauma.</strong> Even if you’re no longer in a stressful environment, things that happened to you as a child can have an impact later in life.</li>
+      <li><strong>Stressful events:</strong> like losing a loved one, or being in a car accident.</li>
+      <li><strong>Unhealthy habits: </strong>like not getting enough sleep, or not eating.</li>
+      <li><strong>Drugs and alcohol:</strong> Abusing drugs and alcohol puts you at higher risk of developing bipolar disorder. It can also make it harder to recover from bipolar disorder. Some drugs—including some medications—can trigger manic or depressive episodes.</li>
+      <li><strong>Brain chemistry.</strong> Bipolar disorder involves an imbalance of natural chemicals in your brain and your body.</li>
+      </ul>
       </div>
       
       `,
       imageUrl: "",
       direction: "left",
-    },
-    {
-      number: 5,
-      heading: "",
-      subHeading: "",
-      description: `
-      <div class="text-left text-lg">
-      
-      </div>
-      `,
-      imageUrl: "",
-      direction: "right",
     },
   ];
 
