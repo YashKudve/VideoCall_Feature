@@ -13,6 +13,7 @@ import UnderstandBipolar from "./questions/More/UnderstandBipolar.jsx";
 import UnderstandPTSD from "./questions/More/UnderstandPTSD.jsx";
 import HospitalList from "./questions/More/HospitalList.js";
 import H1 from "./questions/More/H1.js";
+import RecoverTemplate from "./questions/More/RecoverTemplate.jsx";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <UnderstandBipolar/> */}
       {/* <UnderstandPTSD/> */}
       {/* <HospitalList/> */}
-      <H1/>
+      {/* <H1/> */}
+      <RecoverTemplate/>
     
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
