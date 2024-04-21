@@ -14,6 +14,13 @@ import UnderstandPTSD from "./questions/More/UnderstandPTSD.jsx";
 import HospitalList from "./questions/More/HospitalList.js";
 import H1 from "./questions/More/H1.js";
 import RecoverTemplate from "./questions/More/RecoverTemplate.jsx";
+import Prescription1 from "./questions/More/Prescription1.jsx";
+import Prescription2 from "./questions/More/Prescription2.jsx";
+import Bipolar from "./questions/Bipolar.jsx";
+import Depress3 from "./questions/Depress3.jsx";
+import Moodlifter from "./questions/More/Moodlifter.jsx";
+import M1 from "./questions/More/Moodlifter1.jsx";
+import M2 from "./questions/More/M2.jsx";
 
 function App() {
   return (
@@ -25,11 +32,18 @@ function App() {
       {/* <UnderstandED/> */}
       {/* <UnderstandADHD/> */}
       {/* <PrescriptionUpload/> */}
+      {/* <Prescription1/> */}
+      {/* <Prescription2/> */}
       {/* <UnderstandBipolar/> */}
       {/* <UnderstandPTSD/> */}
       {/* <HospitalList/> */}
       {/* <H1/> */}
-      <RecoverTemplate/>
+      {/* <Bipolar/> */}
+      {/* <Depress3/> */}
+      {/* <Moodlifter/> */}
+      <M2/>
+      {/* <M1/> */}
+      {/* <RecoverTemplate/> */}
     
       {/* <Routes>
         <Route path="/" element={<LobbyScreen />} />
